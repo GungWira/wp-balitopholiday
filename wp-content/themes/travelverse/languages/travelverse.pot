@@ -1,0 +1,1821 @@
+# Copyright (C) 2024 WP Travel Engine
+# This file is distributed under the GNU General Public License v3 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: TravelVerse 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/travelverse\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-05-06T11:44:26+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.10.0\n"
+"X-Domain: travelverse\n"
+
+#. Theme Name of the theme
+#: inc/custom-functions.php:460
+#: inc/custom-functions.php:461
+msgid "TravelVerse"
+msgstr ""
+
+#. Theme URI of the theme
+msgid "https://wptravelengine.com/wordpress-travel-themes/travelverse/"
+msgstr ""
+
+#. Description of the theme
+msgid "TravelVerse is a free FSE (Full Site Editing) travel agency WordPress theme to create travel and tour booking websites. It is powered by the WP Travel Engine plugin, the most popular travel booking plugin. You can use the TravelVerse theme to create websites such as travel agencies, tour operators, trekking, city tours, rafting, jungle safari, or anything travel-related. The theme is fully responsive, SEO-ready, and Speed-optimized, so you are ahead of the game. Furthermore, TravelVerse allows you to customize your site with various blocks & patterns. Additionally, TravelVerse is WooCommerce compatible, as well as RTL and translation-ready.Check the demo at https://fsedemo.com/travelverse/, documentation at https://docs.wptravelengine.com/, and get support at https://wptravelengine.com/support-ticket/."
+msgstr ""
+
+#. Author of the theme
+msgid "WP Travel Engine"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://wordpress.org/themes/author/wptravelengine/"
+msgstr ""
+
+#: inc/ajax-functions.php:49
+msgid "Security Error, Please reload the page."
+msgstr ""
+
+#: inc/ajax-functions.php:52
+msgid "Security Error, Need higher Permissions to install plugin."
+msgstr ""
+
+#: inc/ajax-functions.php:109
+msgid "Error, plugin could not be installed, please install manually."
+msgstr ""
+
+#: inc/class-admin-notices.php:43
+msgid "Start with Ready-Made Templates"
+msgstr ""
+
+#: inc/class-admin-notices.php:44
+msgid "TravelVerse is a feature-rich Full Site Editing (FSE) theme with lots of pre-built patterns and templates for beautiful a professional website using Gutenberg Editor."
+msgstr ""
+
+#: inc/class-admin-notices.php:46
+msgid "Go to Dashboard"
+msgstr ""
+
+#: inc/class-admin-notices.php:47
+msgid "Learn More"
+msgstr ""
+
+#: inc/class-admin-notices.php:52
+msgid "Banner Image"
+msgstr ""
+
+#: inc/custom-functions.php:14
+msgid "Underline heading"
+msgstr ""
+
+#: inc/custom-functions.php:21
+msgid "Primary Arrow"
+msgstr ""
+
+#: inc/custom-functions.php:28
+msgid "White Arrow"
+msgstr ""
+
+#: inc/custom-functions.php:36
+msgid "Show two lines"
+msgstr ""
+
+#: inc/custom-functions.php:43
+msgid "Show three lines"
+msgstr ""
+
+#: inc/custom-functions.php:51
+msgid "Mob 2 Col"
+msgstr ""
+
+#: inc/custom-functions.php:62
+#: inc/custom-functions.php:220
+#: inc/custom-functions.php:228
+msgid "Hover Animation"
+msgstr ""
+
+#: inc/custom-functions.php:70
+msgid "Slide Up Fade In Animation"
+msgstr ""
+
+#: inc/custom-functions.php:78
+msgid "Slide Down Fade In Animation"
+msgstr ""
+
+#: inc/custom-functions.php:86
+msgid "Slide Left Fade In Animation"
+msgstr ""
+
+#: inc/custom-functions.php:94
+msgid "Slide Right Fade In Animation"
+msgstr ""
+
+#: inc/custom-functions.php:102
+#: inc/custom-functions.php:308
+msgid "ClipIn Animation"
+msgstr ""
+
+#: inc/custom-functions.php:110
+msgid "Flip Left Animation"
+msgstr ""
+
+#: inc/custom-functions.php:118
+msgid "Flip Right Animation"
+msgstr ""
+
+#: inc/custom-functions.php:126
+msgid "Flip Up Animation"
+msgstr ""
+
+#: inc/custom-functions.php:134
+msgid "Flip Down Animation"
+msgstr ""
+
+#: inc/custom-functions.php:142
+msgid "Zoom In Animation"
+msgstr ""
+
+#: inc/custom-functions.php:150
+msgid "Zoom Out Animation"
+msgstr ""
+
+#: inc/custom-functions.php:158
+msgid "Zoom In Up Animation"
+msgstr ""
+
+#: inc/custom-functions.php:166
+msgid "Zoom In Down Animation"
+msgstr ""
+
+#: inc/custom-functions.php:174
+msgid "Zoom In Right Animation"
+msgstr ""
+
+#: inc/custom-functions.php:182
+msgid "Zoom In Left Animation"
+msgstr ""
+
+#: inc/custom-functions.php:190
+msgid "Zoom Out Up Animation"
+msgstr ""
+
+#: inc/custom-functions.php:197
+msgid "Zoom Out Down Animation"
+msgstr ""
+
+#: inc/custom-functions.php:204
+msgid "Zoom Out Right Animation"
+msgstr ""
+
+#: inc/custom-functions.php:211
+msgid "Zoom Out Left Animation"
+msgstr ""
+
+#: inc/custom-functions.php:236
+#: inc/custom-functions.php:252
+msgid "Mobile Justify Right"
+msgstr ""
+
+#: inc/custom-functions.php:244
+msgid "Hide in Mobile"
+msgstr ""
+
+#: inc/custom-functions.php:260
+msgid "Square Shape"
+msgstr ""
+
+#: inc/custom-functions.php:268
+msgid "With Background Color"
+msgstr ""
+
+#: inc/custom-functions.php:276
+msgid "Mob Gap-20px"
+msgstr ""
+
+#: inc/custom-functions.php:284
+msgid "Mob Gap-30px"
+msgstr ""
+
+#: inc/custom-functions.php:292
+msgid "Mob Gap-40px"
+msgstr ""
+
+#: inc/custom-functions.php:300
+msgid "Mob Gap-50px"
+msgstr ""
+
+#: inc/custom-functions.php:405
+msgid "Browse TravelVerse Starter Templates"
+msgstr ""
+
+#: inc/custom-functions.php:409
+msgid "Install TravelVerse Starter Templates"
+msgstr ""
+
+#: inc/custom-functions.php:412
+msgid "Activate TravelVerse Starter Templates"
+msgstr ""
+
+#: inc/patterns/about/about-banner.php:10
+msgid "About Banner"
+msgstr ""
+
+#: inc/patterns/about/about-banner.php:16
+msgid "We are TravelVerse"
+msgstr ""
+
+#: inc/patterns/about/about-client.php:10
+msgid "About Client"
+msgstr ""
+
+#: inc/patterns/about/about-client.php:18
+msgid "We empower clients to showcase their unique brand identity and captivate their audience with a visually striking and highly functional website"
+msgstr ""
+
+#: inc/patterns/about/about-features.php:10
+msgid "About Features"
+msgstr ""
+
+#: inc/patterns/about/about-features.php:18
+msgid "What Sets Us Apart"
+msgstr ""
+
+#: inc/patterns/about/about-features.php:22
+msgid "Our unwavering commitment to personalized service, attention to detail, and passion for crafting unforgettable travel experiences."
+msgstr ""
+
+#: inc/patterns/about/about-features.php:26
+msgid "With our dedicated team of experts, innovative approach to itinerary planning, and deep understanding of our clients' needs, we go above and beyond to exceed expectations at every turn. From meticulously curated itineraries to seamless logistics and unparalleled customer support, we're dedicated."
+msgstr ""
+
+#: inc/patterns/about/about-features.php:31
+msgid "TRAVEL WITH US"
+msgstr ""
+
+#: inc/patterns/about/about-features.php:43
+#: inc/patterns/frontpage/how-it-works.php:29
+msgid "01"
+msgstr ""
+
+#: inc/patterns/about/about-features.php:52
+#: inc/patterns/frontpage/services.php:38
+msgid "Personalized Service"
+msgstr ""
+
+#: inc/patterns/about/about-features.php:56
+msgid "We take the time to your preferences and aspirations, tailoring each journey to your individual needs."
+msgstr ""
+
+#: inc/patterns/about/about-features.php:69
+#: inc/patterns/frontpage/how-it-works.php:47
+msgid "02"
+msgstr ""
+
+#: inc/patterns/about/about-features.php:78
+msgid "Expertise and Experience"
+msgstr ""
+
+#: inc/patterns/about/about-features.php:82
+msgid "Our years of experienced team of seasoned experts is dedicated to curating exceptional travel experiences."
+msgstr ""
+
+#: inc/patterns/about/about-features.php:95
+#: inc/patterns/frontpage/how-it-works.php:65
+msgid "03"
+msgstr ""
+
+#: inc/patterns/about/about-features.php:104
+msgid "Commitment to Sustainability"
+msgstr ""
+
+#: inc/patterns/about/about-features.php:108
+msgid "We minimize our environmental impact, support local communities, and choose eco-friendly accommodations."
+msgstr ""
+
+#: inc/patterns/about/about-mission.php:10
+msgid "About Mission"
+msgstr ""
+
+#: inc/patterns/about/about-mission.php:26
+#: inc/patterns/frontpage/about.php:36
+msgid "100+"
+msgstr ""
+
+#: inc/patterns/about/about-mission.php:30
+#: inc/patterns/frontpage/about.php:40
+msgid "Holiday Package"
+msgstr ""
+
+#: inc/patterns/about/about-mission.php:38
+#: inc/patterns/frontpage/about.php:49
+msgid "108+"
+msgstr ""
+
+#: inc/patterns/about/about-mission.php:42
+#: inc/patterns/frontpage/about.php:53
+msgid "Luxury Stays"
+msgstr ""
+
+#: inc/patterns/about/about-mission.php:50
+#: inc/patterns/frontpage/about.php:64
+msgid "32+"
+msgstr ""
+
+#: inc/patterns/about/about-mission.php:54
+#: inc/patterns/frontpage/about.php:68
+msgid "Elite Airlines"
+msgstr ""
+
+#: inc/patterns/about/about-mission.php:62
+#: inc/patterns/frontpage/about.php:77
+msgid "120M+"
+msgstr ""
+
+#: inc/patterns/about/about-mission.php:66
+#: inc/patterns/frontpage/about.php:81
+msgid "Satisfied Traveller"
+msgstr ""
+
+#: inc/patterns/about/about-mission.php:89
+msgid "Our Mission"
+msgstr ""
+
+#: inc/patterns/about/about-mission.php:93
+msgid "At TravelVerse, our mission is simple: to inspire and empower travelers to explore the world with confidence, curiosity, and compassion."
+msgstr ""
+
+#: inc/patterns/about/about-mission.php:97
+msgid "We believe in the transformative power of travel to broaden horizons, foster understanding, and create lasting memories that transcend borders and boundaries."
+msgstr ""
+
+#: inc/patterns/about/about-mission.php:101
+msgid "“Travel is not just about seeing new places but about experiencing life-changing adventures.”"
+msgstr ""
+
+#: inc/patterns/about/about-mission.php:105
+msgid "- Samantha Reynolds (Founder)"
+msgstr ""
+
+#: inc/patterns/about/about-services.php:10
+msgid "About Services"
+msgstr ""
+
+#: inc/patterns/about/about-services.php:17
+msgid "Our Services"
+msgstr ""
+
+#: inc/patterns/about/about-services.php:21
+msgid "We offers a comprehensive range of services to meet your travel need."
+msgstr ""
+
+#: inc/patterns/about/about-services.php:33
+msgid "Itinerary Planning"
+msgstr ""
+
+#: inc/patterns/about/about-services.php:37
+msgid "Let us create a tailor-made itinerary that reflects your interests, preferences &amp; budget."
+msgstr ""
+
+#: inc/patterns/about/about-services.php:49
+msgid "Expert Guidance"
+msgstr ""
+
+#: inc/patterns/about/about-services.php:53
+msgid "Our team of experts is here to offer personalized guidance and support every step of the way."
+msgstr ""
+
+#: inc/patterns/about/about-services.php:65
+msgid "24/7 Customer Support"
+msgstr ""
+
+#: inc/patterns/about/about-services.php:69
+msgid "Book places effortlessly with our secure platform, backed by expert support."
+msgstr ""
+
+#: inc/patterns/about/about-services.php:81
+msgid "Travel Logistics"
+msgstr ""
+
+#: inc/patterns/about/about-services.php:85
+msgid "We handle flights, accommodation and transport, so you just relax and explore."
+msgstr ""
+
+#: inc/patterns/about/about-team.php:10
+msgid "About Team"
+msgstr ""
+
+#: inc/patterns/about/about-team.php:17
+msgid "Expert Team"
+msgstr ""
+
+#: inc/patterns/about/about-team.php:21
+msgid "Our Team of Travel Visionaries"
+msgstr ""
+
+#: inc/patterns/about/about-team.php:33
+#: inc/patterns/team/team.php:34
+msgid "Samantha Reynolds"
+msgstr ""
+
+#: inc/patterns/about/about-team.php:37
+#: inc/patterns/team/team.php:38
+msgid "Founder &amp; CEO"
+msgstr ""
+
+#: inc/patterns/about/about-team.php:49
+#: inc/patterns/team/team.php:76
+msgid "Michael Thompson"
+msgstr ""
+
+#: inc/patterns/about/about-team.php:53
+#: inc/patterns/team/team.php:80
+msgid "Chief Operating Officer (COO)"
+msgstr ""
+
+#: inc/patterns/about/about-team.php:65
+#: inc/patterns/team/team.php:122
+msgid "Emily Carter"
+msgstr ""
+
+#: inc/patterns/about/about-team.php:69
+#: inc/patterns/team/team.php:126
+msgid "Head of Marketing"
+msgstr ""
+
+#: inc/patterns/about/about-team.php:81
+#: inc/patterns/team/team.php:156
+msgid "Benjamin Nguyen"
+msgstr ""
+
+#: inc/patterns/about/about-team.php:85
+#: inc/patterns/team/team.php:160
+msgid "Director of Sales"
+msgstr ""
+
+#: inc/patterns/about/about-team.php:93
+msgid "VIEW ALL TEAM"
+msgstr ""
+
+#: inc/patterns/block-patterns.php:14
+msgid "TravelVerse Patterns"
+msgstr ""
+
+#: inc/patterns/block-patterns.php:15
+msgid "Patterns for sections and components"
+msgstr ""
+
+#: inc/patterns/blog/post-layout-1.php:10
+msgid "Post Layout 1"
+msgstr ""
+
+#: inc/patterns/blog/post-layout-2.php:10
+msgid "Post Layout 2"
+msgstr ""
+
+#: inc/patterns/contact/contact-form.php:10
+msgid "Contact Form"
+msgstr ""
+
+#: inc/patterns/contact/contact-form.php:18
+msgid "Get In Touch"
+msgstr ""
+
+#: inc/patterns/contact/contact-form.php:29
+msgid "Office"
+msgstr ""
+
+#: inc/patterns/contact/contact-form.php:33
+msgid "1817 Marshville Road, Ste 125"
+msgstr ""
+
+#: inc/patterns/contact/contact-form.php:45
+msgid "Email"
+msgstr ""
+
+#: inc/patterns/contact/contact-form.php:49
+msgid "email@domain.com"
+msgstr ""
+
+#: inc/patterns/contact/contact-form.php:61
+msgid "Contact"
+msgstr ""
+
+#: inc/patterns/contact/contact-form.php:65
+msgid "0123-456-789"
+msgstr ""
+
+#: inc/patterns/contact/contact-form.php:77
+msgid "Lets Get Connected"
+msgstr ""
+
+#: inc/patterns/contact/faq.php:10
+msgid "FAQ"
+msgstr ""
+
+#: inc/patterns/contact/faq.php:16
+msgid "Frequently Asked Questions (FAQs)"
+msgstr ""
+
+#: inc/patterns/contact/faq.php:21
+msgid "What travel services do you offer?"
+msgstr ""
+
+#: inc/patterns/contact/faq.php:22
+msgid "We offer a variety of travel services to cater to your needs, including destination planning, itinerary creation, activity booking, travel logistics management, and 24/7 support throughout your trip."
+msgstr ""
+
+#: inc/patterns/contact/faq.php:31
+msgid "Do you specialize in any particular destinations?"
+msgstr ""
+
+#: inc/patterns/contact/faq.php:32
+msgid "While we love exploring the entire world, we have certain regions where our travel experts possess in-depth knowledge and experience.  Feel free to inquire about your dream destination, and we'll be happy to discuss how we can create the perfect itinerary for you."
+msgstr ""
+
+#: inc/patterns/contact/faq.php:41
+msgid "Do you offer custom travel packages?"
+msgstr ""
+
+#: inc/patterns/contact/faq.php:42
+msgid "Absolutely! We believe travel should be a personal experience.  We don't offer one-size-fits-all packages.  We tailor each itinerary to your specific interests, pace, and budget."
+msgstr ""
+
+#: inc/patterns/contact/faq.php:51
+msgid "How much does your service cost?"
+msgstr ""
+
+#: inc/patterns/contact/faq.php:52
+msgid "The cost of your trip will vary depending on your chosen destination, travel style, desired activities, and duration. Contact us for a free consultation to discuss your travel dreams and receive a personalized quote."
+msgstr ""
+
+#: inc/patterns/contact/faq.php:61
+msgid "What is included in the trip cost?"
+msgstr ""
+
+#: inc/patterns/contact/faq.php:62
+msgid "The cost will vary depending on your itinerary.  Generally, it includes flights, accommodation, transportation within your destination, some meals (as specified), guided tours and activities (as chosen), and local taxes.  We'll provide a detailed breakdown of inclusions and exclusions for your specific trip."
+msgstr ""
+
+#: inc/patterns/contact/faq.php:71
+msgid "How do I book a trip with TravelVerse?"
+msgstr ""
+
+#: inc/patterns/contact/faq.php:72
+msgid "The easiest way to book your trip is to contact us through our website or phone.  We'll discuss your travel preferences and create a customized itinerary.  Once finalized, you can confirm your booking and make a secure payment online."
+msgstr ""
+
+#: inc/patterns/contact/faq.php:81
+msgid "What payment methods do you accept?"
+msgstr ""
+
+#: inc/patterns/contact/faq.php:82
+msgid "We accept all major credit cards and secure online bank transfers."
+msgstr ""
+
+#: inc/patterns/contact/faq.php:91
+msgid "What is your cancellation policy?"
+msgstr ""
+
+#: inc/patterns/contact/faq.php:92
+msgid "Our cancellation policy varies depending on the specific services booked and the timeframe before departure. When you finalize your itinerary, we'll provide a detailed breakdown of the policy."
+msgstr ""
+
+#: inc/patterns/footer/footer-pattern.php:10
+msgid "Footer Pattern"
+msgstr ""
+
+#: inc/patterns/footer/footer-pattern.php:32
+msgid "(+12) 123 456 7890"
+msgstr ""
+
+#: inc/patterns/footer/footer-pattern.php:46
+msgid "email@companyname.com"
+msgstr ""
+
+#: inc/patterns/footer/footer-pattern.php:60
+msgid "Registration no: ABC123456789"
+msgstr ""
+
+#: inc/patterns/footer/footer-pattern.php:74
+msgid "G.P.O. Box:12589, Chandol Marg 2, Bishalnagar, Kathmandu, Nepal"
+msgstr ""
+
+#: inc/patterns/footer/footer-pattern.php:102
+msgid "Top Destinations"
+msgstr ""
+
+#: inc/patterns/footer/footer-pattern.php:122
+msgid "Quick Links"
+msgstr ""
+
+#: inc/patterns/footer/footer-pattern.php:142
+msgid "Archives"
+msgstr ""
+
+#: inc/patterns/footer/footer-pattern.php:168
+msgid "Copyright © TravelVerse. All Rights Reserved."
+msgstr ""
+
+#: inc/patterns/footer/footer-pattern.php:187
+#: inc/patterns/footer/footer-pattern.php:193
+#: inc/patterns/footer/footer-pattern.php:199
+#: inc/patterns/footer/footer-pattern.php:205
+msgid "payment"
+msgstr ""
+
+#: inc/patterns/frontpage/about.php:10
+msgid "About"
+msgstr ""
+
+#: inc/patterns/frontpage/about.php:18
+msgid "About TravelVerse"
+msgstr ""
+
+#: inc/patterns/frontpage/about.php:22
+msgid "Your Gateway to Seamless Travel Experiences"
+msgstr ""
+
+#: inc/patterns/frontpage/about.php:26
+msgid "Welcome to TravelVerse! We create amazing adventures just for you, filled with passion and care. We're travel experts and love putting together trips that fit exactly what you want. Every part of your journey will be incredible"
+msgstr ""
+
+#: inc/patterns/frontpage/activities.php:10
+msgid "Activities"
+msgstr ""
+
+#: inc/patterns/frontpage/activities.php:17
+msgid "Most Popular"
+msgstr ""
+
+#: inc/patterns/frontpage/activities.php:21
+msgid "Adventurous Activities"
+msgstr ""
+
+#: inc/patterns/frontpage/activities.php:31
+msgid "VIEW ALL ACTIVITIES"
+msgstr ""
+
+#: inc/patterns/frontpage/banner.php:10
+msgid "Banner"
+msgstr ""
+
+#: inc/patterns/frontpage/banner.php:23
+msgid "Discover Your Next Great Adventure!"
+msgstr ""
+
+#: inc/patterns/frontpage/banner.php:27
+msgid "Book your adventure with confidence and explore with peace of mind."
+msgstr ""
+
+#: inc/patterns/frontpage/best-offers.php:10
+msgid "Best offers"
+msgstr ""
+
+#: inc/patterns/frontpage/best-offers.php:17
+msgid "Best Offers"
+msgstr ""
+
+#: inc/patterns/frontpage/best-offers.php:21
+msgid "Best Tour Offers"
+msgstr ""
+
+#: inc/patterns/frontpage/best-offers.php:31
+msgid "VIEW ALL OFFERS"
+msgstr ""
+
+#: inc/patterns/frontpage/blog.php:11
+msgid "Blog"
+msgstr ""
+
+#: inc/patterns/frontpage/blog.php:16
+msgid "Knowledge Center"
+msgstr ""
+
+#: inc/patterns/frontpage/blog.php:20
+msgid "Latest Articles &amp; Blog"
+msgstr ""
+
+#: inc/patterns/frontpage/blog.php:49
+msgid "READ ALL ARTICLES"
+msgstr ""
+
+#: inc/patterns/frontpage/cta-section.php:10
+msgid "CTA-Section"
+msgstr ""
+
+#: inc/patterns/frontpage/cta-section.php:19
+msgid "Ready to Explore? Let's Chat About Your Dream Trip."
+msgstr ""
+
+#: inc/patterns/frontpage/cta-section.php:23
+msgid "We'll turn your travel ideas into reality. Start your next adventure with TravelVerse – your ultimate travel companion. Let your wanderlust soar! Start exploring today and let unforgettable experiences await!"
+msgstr ""
+
+#: inc/patterns/frontpage/cta-section.php:29
+msgid "PLAN YOUR TRIP"
+msgstr ""
+
+#: inc/patterns/frontpage/featured-section.php:10
+msgid "featured-section"
+msgstr ""
+
+#: inc/patterns/frontpage/featured-section.php:22
+msgid "Proud to be Awarded"
+msgstr ""
+
+#: inc/patterns/frontpage/how-it-works.php:10
+#: inc/patterns/frontpage/how-it-works.php:16
+msgid "How It Works"
+msgstr ""
+
+#: inc/patterns/frontpage/how-it-works.php:20
+msgid "How TravelVerse Makes it Easy"
+msgstr ""
+
+#: inc/patterns/frontpage/how-it-works.php:35
+msgid "Choose Your Destinations"
+msgstr ""
+
+#: inc/patterns/frontpage/how-it-works.php:39
+msgid "Empowers travelers to handpick their dream destinations from a curated selection offered."
+msgstr ""
+
+#: inc/patterns/frontpage/how-it-works.php:53
+msgid "Pick Your Budget"
+msgstr ""
+
+#: inc/patterns/frontpage/how-it-works.php:57
+msgid "Enables travelers to specify their preferred spending range for their upcoming journey."
+msgstr ""
+
+#: inc/patterns/frontpage/how-it-works.php:71
+msgid "Follow Your Path"
+msgstr ""
+
+#: inc/patterns/frontpage/how-it-works.php:75
+msgid "Every journey is personal, and our role is to empower travelers to follow their own path to discovery."
+msgstr ""
+
+#: inc/patterns/frontpage/how-it-works.php:81
+msgid "BOOK AN APPOINTMENT"
+msgstr ""
+
+#: inc/patterns/frontpage/popular-destinations.php:10
+msgid "Popular Destinations"
+msgstr ""
+
+#: inc/patterns/frontpage/popular-destinations.php:17
+msgid "Unforgettable Adventures"
+msgstr ""
+
+#: inc/patterns/frontpage/popular-destinations.php:21
+msgid "Most Popular Destinations"
+msgstr ""
+
+#: inc/patterns/frontpage/popular-destinations.php:31
+msgid "VIEW ALL DESTINATIONS"
+msgstr ""
+
+#: inc/patterns/frontpage/popular-package.php:10
+msgid "Popular Package"
+msgstr ""
+
+#: inc/patterns/frontpage/popular-package.php:17
+msgid "Popular Packages"
+msgstr ""
+
+#: inc/patterns/frontpage/popular-package.php:21
+msgid "Choose Best Holiday Package"
+msgstr ""
+
+#: inc/patterns/frontpage/popular-package.php:31
+msgid "VIEW ALL TOURS"
+msgstr ""
+
+#: inc/patterns/frontpage/services.php:10
+msgid "Services"
+msgstr ""
+
+#: inc/patterns/frontpage/services.php:18
+msgid "Our Service"
+msgstr ""
+
+#: inc/patterns/frontpage/services.php:22
+msgid "Top Values For You"
+msgstr ""
+
+#: inc/patterns/frontpage/services.php:26
+msgid "Relax &amp; enjoy your journey while we handle the details with care."
+msgstr ""
+
+#: inc/patterns/frontpage/services.php:42
+msgid "Explore destinations perfectly matched to your interests and preferences."
+msgstr ""
+
+#: inc/patterns/frontpage/services.php:56
+msgid "Best Price Guaranteed"
+msgstr ""
+
+#: inc/patterns/frontpage/services.php:60
+msgid "No hidden fees, no surprises. Just the best price for your dream adventure."
+msgstr ""
+
+#: inc/patterns/frontpage/services.php:70
+msgid "24/7 Support"
+msgstr ""
+
+#: inc/patterns/frontpage/services.php:74
+msgid "Stress-free booking and expert assistance throughout your journey."
+msgstr ""
+
+#: inc/patterns/frontpage/testimonials.php:10
+#: inc/patterns/frontpage/testimonials.php:18
+msgid "Testimonials"
+msgstr ""
+
+#: inc/patterns/frontpage/testimonials.php:22
+msgid "Happy Travellers"
+msgstr ""
+
+#: inc/patterns/header/header-one-pattern.php:10
+msgid "Header One Pattern"
+msgstr ""
+
+#: inc/patterns/header/header-one-pattern.php:26
+#: inc/patterns/header/header-pattern.php:26
+msgid "Quick Questions? Email Us"
+msgstr ""
+
+#: inc/patterns/header/header-one-pattern.php:30
+#: inc/patterns/header/header-pattern.php:30
+msgid "contact@yourdomain.com"
+msgstr ""
+
+#: inc/patterns/header/header-one-pattern.php:38
+#: inc/patterns/header/header-pattern.php:38
+msgid "Talk to an Expert (David)"
+msgstr ""
+
+#: inc/patterns/header/header-one-pattern.php:42
+#: inc/patterns/header/header-pattern.php:42
+msgid "+01-123-456-7890"
+msgstr ""
+
+#: inc/patterns/header/header-pattern.php:10
+msgid "Header Pattern"
+msgstr ""
+
+#: inc/patterns/sidebar/travelverse-sidebar.php:9
+msgid "Sidebar"
+msgstr ""
+
+#: inc/patterns/sidebar/travelverse-sidebar.php:26
+msgid "Isabella Summers"
+msgstr ""
+
+#: inc/patterns/sidebar/travelverse-sidebar.php:30
+msgid "Her experiences, insights, and tips for conscious travel, inspires others to explore the world responsibly and make a positive impact on the places they visit."
+msgstr ""
+
+#: inc/patterns/sidebar/travelverse-sidebar.php:48
+msgid "Categories"
+msgstr ""
+
+#: inc/patterns/sidebar/travelverse-sidebar.php:60
+msgid "Popular Posts"
+msgstr ""
+
+#: inc/patterns/team/team-banner.php:10
+msgid "Team Banner"
+msgstr ""
+
+#: inc/patterns/team/team-banner.php:17
+msgid "Meet the TravelVerse Team"
+msgstr ""
+
+#: inc/patterns/team/team-banner.php:21
+msgid "Meet our dynamic team of seasoned travel professionals, who bring a unique blend of expertise and innovation to crafting your dream adventure."
+msgstr ""
+
+#: inc/patterns/team/team.php:10
+msgid "Team"
+msgstr ""
+
+#: inc/patterns/team/team.php:17
+msgid "Administration"
+msgstr ""
+
+#: inc/patterns/team/team.php:45
+msgid "Samantha Reynolds is the driving force behind TravelVerse, bringing with her a wealth of experience, passion for travel, and a visionary approach to the industry. With a background in business management and a lifelong love for exploration, Samantha founded TravelVerse with the mission of revolutionizing the travel experience."
+msgstr ""
+
+#: inc/patterns/team/team.php:49
+msgid "Prior to founding TravelVerse, Samantha gained invaluable experience working in various roles within the travel sector, from managing boutique hotels to coordinating large-scale travel events. Her hands-on experience provided her with insights into the challenges and opportunities facing travelers today."
+msgstr ""
+
+#: inc/patterns/team/team.php:53
+msgid "In addition to her role at TravelVerse, Samantha is actively involved in philanthropic efforts aimed at promoting sustainable tourism and supporting local communities in the destinations where TravelVerse operates. She believes in the power of travel to create positive change and is committed to making a difference in the world through responsible and ethical practices."
+msgstr ""
+
+#: inc/patterns/team/team.php:57
+msgid "Samantha's leadership, vision, and commitment to excellence are the driving forces behind TravelVerse's success. Under her guidance, the company continues to innovate, evolve, and redefine the travel industry, one unforgettable journey at a time."
+msgstr ""
+
+#: inc/patterns/team/team.php:87
+msgid "Michael Thompson serves as the Chief Operating Officer (COO) of TravelVerse, bringing with him a wealth of experience in operations management and logistics. With a background in business administration and a passion for delivering exceptional customer experiences, Michael plays a crucial role in ensuring that TravelVerse's operations run smoothly and efficiently."
+msgstr ""
+
+#: inc/patterns/team/team.php:91
+msgid "As COO, Michael oversees all aspects of TravelVerse's day-to-day operations, including logistics, customer service, and quality control. He works closely with the CEO and other members of the leadership team to develop and implement strategies that drive growth, improve efficiency, and enhance the overall customer experience. With his analytical mindset, attention to detail, and dedication to excellence, Michael is instrumental in ensuring that TravelVerse continues to exceed the expectations of its clients and maintain its reputation as a leader in the travel industry."
+msgstr ""
+
+#: inc/patterns/team/team.php:105
+msgid "Trekking Leaders"
+msgstr ""
+
+#: inc/patterns/team/team.php:133
+msgid "Emily Carter leads TravelVerse's marketing efforts with creativity, strategic insight, and a passion for storytelling. With a background in digital marketing and brand management, Emily is responsible for shaping TravelVerse's brand identity, engaging with audiences, and driving growth through innovative marketing strategies."
+msgstr ""
+
+#: inc/patterns/team/team.php:137
+msgid "As Head of Marketing, Emily oversees all aspects of TravelVerse's marketing initiatives, including digital advertising, social media, content creation, and brand partnerships. She works closely with the CEO and other members of the leadership team to develop and execute marketing campaigns that resonate with travelers and inspire them to embark on unforgettable adventures with TravelVerse. With her creative flair, strategic mindset, and deep understanding of consumer behavior, Emily plays a crucial role in driving brand awareness, customer acquisition, and revenue growth for TravelVerse."
+msgstr ""
+
+#: inc/patterns/team/team.php:167
+msgid "Benjamin Nguyen is the Director of Sales at TravelVerse, responsible for driving revenue growth and building strong relationships with clients. With a background in sales management and a passion for delivering exceptional customer service, Benjamin plays a crucial role in ensuring that TravelVerse remains a trusted partner for travelers seeking exceptional experiences."
+msgstr ""
+
+#: inc/patterns/team/team.php:171
+msgid "As Director of Sales, Benjamin oversees all aspects of TravelVerse's sales operations, including business development, client acquisition, and sales strategy. He works closely with the CEO and other members of the leadership team to identify new opportunities for growth, develop targeted sales initiatives, and cultivate relationships with key partners and stakeholders. With his strategic mindset, leadership skills, and dedication to excellence, Benjamin is instrumental in driving revenue growth and expanding TravelVerse's presence in the travel industry."
+msgstr ""
+
+#: inc/patterns/team/team.php:190
+msgid "Sarah Lewis"
+msgstr ""
+
+#: inc/patterns/team/team.php:194
+msgid "Head of Customer Experience"
+msgstr ""
+
+#: inc/patterns/team/team.php:201
+msgid "Sarah Lewis serves as the Head of Customer Experience at TravelVerse, overseeing all aspects of the customer journey and ensuring that clients receive exceptional service from start to finish. With a background in hospitality management and a passion for delivering memorable experiences, Sarah plays a crucial role in maintaining TravelVerse's reputation for excellence in customer service."
+msgstr ""
+
+#: inc/patterns/team/team.php:205
+msgid "As Head of Customer Experience, Sarah leads a team of dedicated professionals who are responsible for assisting clients with inquiries, resolving issues, and ensuring that their travel experience with TravelVerse exceeds expectations. She works closely with the CEO and other members of the leadership team to develop and implement strategies that enhance the overall customer experience and drive customer satisfaction. With her proactive approach, attention to detail, and commitment to excellence, Sarah is instrumental in ensuring that TravelVerse remains a trusted partner for travelers seeking unforgettable adventures."
+msgstr ""
+
+#: inc/patterns/team/team.php:224
+msgid "Matthew Wilson"
+msgstr ""
+
+#: inc/patterns/team/team.php:228
+msgid "Lead Travel Consultant"
+msgstr ""
+
+#: inc/patterns/team/team.php:235
+msgid "Matthew Wilson is a seasoned travel expert and the Lead Travel Consultant at TravelVerse, with a passion for exploring new destinations and creating unforgettable experiences for clients. With over a decade of experience in the travel industry, Matthew brings a wealth of knowledge and expertise to his role, helping clients plan and book their dream vacations with confidence."
+msgstr ""
+
+#: inc/patterns/team/team.php:239
+msgid "In his role, Matthew works closely with clients to understand their travel preferences, interests, and budget constraints. He utilizes his network of industry contacts and destination expertise to craft unique and immersive experiences tailored to each client's needs. Matthew's personalized approach, attention to detail, and commitment to customer satisfaction set TravelVerse apart as a trusted advisor for travelers worldwide."
+msgstr ""
+
+#: inc/patterns/team/team.php:258
+msgid "Jessica Patel"
+msgstr ""
+
+#: inc/patterns/team/team.php:262
+msgid "Marketing Coordinator"
+msgstr ""
+
+#: inc/patterns/team/team.php:269
+msgid "Jessica Patel plays a crucial role in TravelVerse's marketing team as the Marketing Coordinator, responsible for executing campaigns and driving engagement across various channels. With a background in marketing communications and a creative flair, Jessica brings fresh ideas and innovative strategies to the table."
+msgstr ""
+
+#: inc/patterns/team/team.php:273
+msgid "In her role, Jessica supports the marketing team in developing and implementing marketing initiatives to promote TravelVerse's brand and offerings. She collaborates with internal stakeholders to create engaging content, manage social media platforms, and coordinate promotional activities. Jessica's attention to detail, organizational skills, and passion for marketing contribute to the success of TravelVerse's marketing efforts."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:340
+msgid "Install Required Plugins"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:341
+msgid "Install Plugins"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: inc/tgmpa/class-tgm-plugin-activation.php:343
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: inc/tgmpa/class-tgm-plugin-activation.php:345
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:346
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#. translators: 1: plugin name(s).
+#: inc/tgmpa/class-tgm-plugin-activation.php:348
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/tgmpa/class-tgm-plugin-activation.php:354
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/tgmpa/class-tgm-plugin-activation.php:360
+msgid "The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s."
+msgid_plural "The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/tgmpa/class-tgm-plugin-activation.php:366
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/tgmpa/class-tgm-plugin-activation.php:372
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/tgmpa/class-tgm-plugin-activation.php:378
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:383
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:388
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:393
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:398
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:399
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:400
+#: inc/tgmpa/class-tgm-plugin-activation.php:3311
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:401
+#: inc/tgmpa/class-tgm-plugin-activation.php:3103
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name.
+#: inc/tgmpa/class-tgm-plugin-activation.php:403
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: inc/tgmpa/class-tgm-plugin-activation.php:405
+msgid "Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin."
+msgstr ""
+
+#. translators: 1: dashboard link.
+#: inc/tgmpa/class-tgm-plugin-activation.php:407
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:408
+msgid "Dismiss this notice"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:409
+msgid "There are one or more required or recommended plugins to install, update or activate."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:410
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:616
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:617
+msgid "Update Required"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:735
+msgid "Set the parent_slug config variable instead."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:1042
+msgid "The remote plugin package does not contain a folder with the desired slug and renaming did not work."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:1042
+#: inc/tgmpa/class-tgm-plugin-activation.php:1052
+msgid "Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:1052
+msgid "The remote plugin package consists of more than one file, but the files are not packaged in a folder."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:1243
+#: inc/tgmpa/class-tgm-plugin-activation.php:3099
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#. translators: %s: version number
+#: inc/tgmpa/class-tgm-plugin-activation.php:2112
+msgid "TGMPA v%s"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2421
+msgid "Required"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2424
+msgid "Recommended"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2440
+msgid "WordPress Repository"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2443
+msgid "External Source"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2446
+msgid "Pre-Packaged"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2463
+msgid "Not Installed"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2467
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2469
+msgid "Active"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2475
+msgid "Required Update not Available"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2478
+msgid "Requires Update"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2481
+msgid "Update recommended"
+msgstr ""
+
+#. translators: 1: install status, 2: update status
+#: inc/tgmpa/class-tgm-plugin-activation.php:2490
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#. translators: 1: number of plugins.
+#: inc/tgmpa/class-tgm-plugin-activation.php:2536
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: inc/tgmpa/class-tgm-plugin-activation.php:2540
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: inc/tgmpa/class-tgm-plugin-activation.php:2544
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: inc/tgmpa/class-tgm-plugin-activation.php:2548
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2630
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2638
+msgid "Installed version:"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2646
+msgid "Minimum required version:"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2658
+msgid "Available version:"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2681
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2695
+msgid "Plugin"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2696
+msgid "Source"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2697
+msgid "Type"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2701
+msgid "Version"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2702
+msgid "Status"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/tgmpa/class-tgm-plugin-activation.php:2751
+msgid "Install %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/tgmpa/class-tgm-plugin-activation.php:2756
+msgid "Update %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/tgmpa/class-tgm-plugin-activation.php:2762
+msgid "Activate %2$s"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2834
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2867
+msgid "Install"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2873
+msgid "Update"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2876
+msgid "Activate"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2907
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2909
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2950
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2952
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3059
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3085
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3310
+msgid "Plugin activation failed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/tgmpa/class-tgm-plugin-activation.php:3655
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. translators: 1: plugin name, 2: error message.
+#: inc/tgmpa/class-tgm-plugin-activation.php:3658
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: inc/tgmpa/class-tgm-plugin-activation.php:3660
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3664
+msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: inc/tgmpa/class-tgm-plugin-activation.php:3666
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3667
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/tgmpa/class-tgm-plugin-activation.php:3669
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3672
+msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: inc/tgmpa/class-tgm-plugin-activation.php:3674
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3675
+msgid "All installations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/tgmpa/class-tgm-plugin-activation.php:3677
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3682
+msgid "Show Details"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3682
+msgid "Hide Details"
+msgstr ""
+
+#: inc/tgmpa/recommended-plugins.php:51
+msgid "WP Travel Engine - Travel and Tour Booking Plugin"
+msgstr ""
+
+#: inc/tgmpa/recommended-plugins.php:56
+msgid "WP Tripadvisor Review Widgets"
+msgstr ""
+
+#: inc/tgmpa/recommended-plugins.php:61
+msgid "Everest Forms: Build Contact Forms, Surveys, Polls, Quizzes, Newsletter & Application Forms, and Many More with Ease!"
+msgstr ""
+
+#: src/admin/Pages/Dashboard/index.jsx:12
+#: src/admin/Pages/FreePro/index.js:15
+msgid "Documentation"
+msgstr ""
+
+#: src/admin/Pages/Dashboard/index.jsx:13
+#: src/admin/Pages/FreePro/index.js:16
+msgid "Explore our detailed and beginner-friendly documentation to set up your site step-by-step."
+msgstr ""
+
+#: src/admin/Pages/Dashboard/index.jsx:14
+#: src/admin/Pages/FreePro/index.js:17
+msgid "Explore Documentation"
+msgstr ""
+
+#: src/admin/Pages/Dashboard/index.jsx:17
+#: src/admin/Pages/FreePro/index.js:20
+#: src/admin/Pages/NavBar/NavBar.js:10
+msgid "Support"
+msgstr ""
+
+#: src/admin/Pages/Dashboard/index.jsx:18
+#: src/admin/Pages/FreePro/index.js:21
+msgid "Need any help? Reach out to our support team for quick assistance with our theme."
+msgstr ""
+
+#: src/admin/Pages/Dashboard/index.jsx:19
+#: src/admin/Pages/FreePro/index.js:22
+msgid "Contact Support Team"
+msgstr ""
+
+#: src/admin/Pages/Dashboard/Introduction.jsx:9
+msgid "Welcome to TravelVerse"
+msgstr ""
+
+#: src/admin/Pages/Dashboard/Introduction.jsx:10
+msgid "TravelVerse is a free FSE (Full Site Editing) travel agency WordPress theme to create travel and tour booking websites. It is powered by the WP Travel Engine plugin, the most popular travel booking plugin. You can use the TravelVerse theme to create websites such as travel agencies, tour operators, trekking, city tours, rafting, jungle safari, or anything travel-related. The theme is fully responsive, SEO-ready, and Speed-optimized, so you are ahead of the game. Furthermore, TravelVerse allows you to customize your site with various blocks & patterns. Additionally, TravelVerse is WooCommerce compatible, as well as RTL and translation-ready."
+msgstr ""
+
+#: src/admin/Pages/Dashboard/Introduction.jsx:12
+msgid "Customize Your Website"
+msgstr ""
+
+#: src/admin/Pages/Dashboard/Introduction.jsx:16
+msgid "TravelVerse welcome image"
+msgstr ""
+
+#: src/admin/Pages/Dashboard/Upgrade.jsx:10
+#: src/admin/Pages/FreePro/index.js:10
+#: src/admin/Pages/FreePro/index.js:34
+msgid "Upgrade to Pro"
+msgstr ""
+
+#: src/admin/Pages/Dashboard/Upgrade.jsx:11
+#: src/admin/Pages/FreePro/index.js:35
+msgid "With the Pro version, you get access to more customization, advanced add-ons, additional customization for headers, blogs and single posts along with many other advanced features."
+msgstr ""
+
+#: src/admin/Pages/Dashboard/Upgrade.jsx:14
+#: src/admin/Pages/FreePro/index.js:38
+#: src/admin/Pages/Setting/Upgrade.jsx:12
+msgid "Upgrade Now"
+msgstr ""
+
+#: src/admin/Pages/FreePro/index.js:11
+msgid "With the Pro version, you can change the look and feel of your website in seconds. You can change color, choose from background patterns, and change the fonts with ease."
+msgstr ""
+
+#: src/admin/Pages/FreePro/index.js:12
+msgid "Learn More About Pro Version"
+msgstr ""
+
+#: src/admin/Pages/NavBar/NavBar.js:8
+msgid "Website"
+msgstr ""
+
+#: src/admin/Pages/NavBar/NavBar.js:9
+msgid "YouTube"
+msgstr ""
+
+#: src/admin/Pages/NavBar/NavBar.js:11
+msgid "Docs"
+msgstr ""
+
+#: src/admin/Pages/Setting/index.js:16
+msgid "Upgrade to premium to access all the features."
+msgstr ""
+
+#: src/admin/Pages/StarterSites/index.js:39
+msgid "TravelVerse is a feature-rich WordPress block theme designed to harness the full potential of the Gutenberg block editor."
+msgstr ""
+
+#: styles/crimson-ember.json
+msgctxt "Style variation name"
+msgid "Crimson Ember"
+msgstr ""
+
+#: styles/crimson-ember.json
+#: styles/forest-green.json
+#: styles/lavender-sapphire.json
+#: styles/sunflower-yellow.json
+#: theme.json
+msgctxt "Color name"
+msgid "Primary Color"
+msgstr ""
+
+#: styles/crimson-ember.json
+#: styles/forest-green.json
+#: styles/lavender-sapphire.json
+#: styles/sunflower-yellow.json
+#: theme.json
+msgctxt "Color name"
+msgid "Secondary Color"
+msgstr ""
+
+#: styles/crimson-ember.json
+#: styles/forest-green.json
+#: styles/lavender-sapphire.json
+#: styles/sunflower-yellow.json
+#: theme.json
+msgctxt "Color name"
+msgid "Text Color"
+msgstr ""
+
+#: styles/crimson-ember.json
+#: styles/forest-green.json
+#: styles/lavender-sapphire.json
+#: styles/sunflower-yellow.json
+#: theme.json
+msgctxt "Color name"
+msgid "Heading Color"
+msgstr ""
+
+#: styles/crimson-ember.json
+#: styles/forest-green.json
+#: styles/lavender-sapphire.json
+#: styles/sunflower-yellow.json
+#: theme.json
+msgctxt "Color name"
+msgid "Accent Color One"
+msgstr ""
+
+#: styles/crimson-ember.json
+#: styles/forest-green.json
+#: styles/lavender-sapphire.json
+#: styles/sunflower-yellow.json
+msgctxt "Color name"
+msgid "Accent Color Two"
+msgstr ""
+
+#: styles/crimson-ember.json
+#: styles/forest-green.json
+#: styles/lavender-sapphire.json
+#: styles/sunflower-yellow.json
+msgctxt "Color name"
+msgid "Background Color"
+msgstr ""
+
+#: styles/crimson-ember.json
+#: styles/forest-green.json
+#: styles/lavender-sapphire.json
+#: styles/sunflower-yellow.json
+#: theme.json
+msgctxt "Color name"
+msgid "Current Color"
+msgstr ""
+
+#: styles/crimson-ember.json
+#: styles/forest-green.json
+#: styles/lavender-sapphire.json
+#: styles/sunflower-yellow.json
+#: theme.json
+msgctxt "Color name"
+msgid "Inherit"
+msgstr ""
+
+#: styles/crimson-ember.json
+#: styles/forest-green.json
+#: styles/lavender-sapphire.json
+#: styles/sunflower-yellow.json
+#: theme.json
+msgctxt "Color name"
+msgid "Transparent"
+msgstr ""
+
+#: styles/crimson-ember.json
+#: styles/forest-green.json
+#: styles/lavender-sapphire.json
+#: styles/sunflower-yellow.json
+#: theme.json
+msgctxt "Duotone name"
+msgid "Primary Color"
+msgstr ""
+
+#: styles/forest-green.json
+msgctxt "Style variation name"
+msgid "Forest Green"
+msgstr ""
+
+#: styles/lavender-sapphire.json
+msgctxt "Style variation name"
+msgid "Lavender Sapphire"
+msgstr ""
+
+#: styles/sunflower-yellow.json
+msgctxt "Style variation name"
+msgid "Sunflower Yellow"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Header"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Header Variation One"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Header Variation two"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Sidebar"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Blank"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Full Width"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Single Leftsidebar"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Single Trip"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Single Rightsidebar"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "About"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Team"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Contact"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Activities"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Destination"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Trip Types"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Trip Search Results"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Trips"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Accent Color two"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Background"
+msgstr ""
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Primary Gradients"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "1"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "2"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "3"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "4"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "5"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "6"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "System Font"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Rowdies"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Roboto"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "S"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "SM"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "M"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "ML"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "L"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "XL"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "2XL"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "3XL"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "4XL"
+msgstr ""

@@ -1,0 +1,23 @@
+/*
+Theme Name: Travelverse Child
+Template: travelverse
+Version: 1.0
+*/
+
+.tv-user-auth {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.tv-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.tv-login,
+.tv-register,
+.tv-logout {
+  font-weight: 500;
+}

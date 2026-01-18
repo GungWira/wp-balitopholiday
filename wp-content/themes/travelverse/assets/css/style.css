@@ -1,0 +1,788 @@
+/*---- button hover ------ */
+input[type="submit"],
+button,
+a {
+	transition: all 0.3s ease-in-out;
+}
+
+:is(.wp-block-post-date, .wp-block-post-author, .taxonomy-category) + div {
+	padding-left: 13px !important;
+}
+
+:is(.wp-block-post-date, .wp-block-post-author, .taxonomy-category) {
+	position: relative;
+}
+
+:is(.wp-block-post-date, .wp-block-post-author, .taxonomy-category)
+	+ div::before {
+	content: "";
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	background-color: var(--wp--preset--color--heading);
+	opacity: 0.2;
+	border-radius: 50%;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+}
+
+/*---- utility class ------ */
+.is-style-on-hover:hover * {
+	color: var(--wp--preset--color--secondary) !important;
+}
+
+/* travel engine compatibility */
+
+:root
+	:is(
+		.wpte-gblock-wrapper,
+		.wpte-bf-checkout,
+		.single-trip,
+		.wp-travel-engine-archive-outer-wrap,
+		.single-post
+	) {
+	--primary-color: var(--wp--preset--color--primary);
+	--primary-color-rgb: 0, 101, 35;
+	--secondary-color: var(--wp--preset--color--secondary);
+	--secondary-color-rgb: 253, 102, 22;
+	--white-color: var(--wp--preset--color--white);
+	--white-color-rgb: 255, 255, 255;
+	--alert-red-color: #f04438;
+	--alert-red-color-rgb: 240, 68, 56;
+}
+.wte-process-layout .wte-popup-sidebar .wte-booking-summary .wte-booking-summary-info .wte-booking-summary-info-title,
+.wp-block-wptravelenginetripblocks-trip-enquiry input.enquiry-submit:hover{
+	background-color: var(--wp--preset--color--primary) !important;
+}
+
+.wp-block-wptravelenginetripblocks-trip-enquiry input.enquiry-submit{
+	background-color: var(--wp--preset--color--secondary) !important;
+}
+
+.wpte-trip-single .wpte-trip-btn-wrap .wpte-trip-explore-btn {
+	background-color: var(--wp--preset--color--accent-color-two) !important;
+	color: var(--secondary-color) !important;
+}
+
+#respond input[type=submit]{
+	background-color: var(--secondary-color) !important;
+	border-color: var(--secondary-color) !important;
+}
+
+.wpte-trip-category .wpte-trip-category-img-wrap .wpte-trip-category-overlay{
+	background-color: rgba(var(--primary-color-rgb), 0.8);
+}
+
+.wpte-trip-single .wpte-trip-budget-wrap .wpte-trip-price-wrap del{
+	color: var(--wp--preset--color--primary) !important;
+}
+
+.category-trips-single
+	.category-trips-single-inner-wrap
+	.category-feat-ribbon
+	.category-feat-ribbon-txt {
+	background-color: var(--primary-color) !important;
+	color: var(--white-color) !important;
+}
+
+.wte_enquiry_contact_form .required {
+	color: var(--alert-red-color) !important;
+}
+
+/* woo commerce */
+
+.product .wc-block-components-product-button .wp-element-button {
+	border: 1px solid var(--wp--preset--color--primary);
+}
+
+.product .wc-block-components-product-button .wp-element-button:hover {
+	background: transparent;
+	color: var(--wp--preset--color--primary);
+}
+
+.products-block-post-template {
+	margin-top: 40px !important;
+}
+
+.woocommerce-ordering select {
+	padding: 8px;
+}
+
+del .woocommerce-Price-amount.amount {
+	opacity: 0.5;
+	text-decoration: line-through;
+}
+
+.wp-block-add-to-cart-form .single_add_to_cart_button {
+	margin-top: 24px !important;
+	width: auto !important;
+	border: 1px solid var(--wp--preset--color--primary) !important;
+}
+
+.wp-block-add-to-cart-form .single_add_to_cart_button:hover {
+	background-color: transparent !important;
+	color: var(--wp--preset--color--primary) !important;
+}
+
+.single.single-product div.product .woocommerce-tabs ul.tabs li.active a {
+	background-color: transparent !important;
+	color: var(--wp--preset--color--heading) !important;
+}
+
+.single.single-product div.product .woocommerce-tabs ul.tabs li.active {
+	border-color: var(--wp--preset--color--primary) !important;
+}
+
+.wc-block-components-button:not(.is-link) {
+	background-color: var(--wp--preset--color--primary);
+	border: 1px solid var(--wp--preset--color--primary);
+	border-radius: 15px;
+	transition: 0.3s ease-in-out;
+}
+
+.wc-block-components-button:not(.is-link):hover {
+	background-color: transparent;
+	color: var(--wp--preset--color--primary);
+}
+
+.wc-block-components-product-price ins {
+	text-decoration: none;
+}
+
+.trip-pagination .page-numbers.current, 
+.trip-pagination .page-numbers:hover, 
+.trip-pagination .page-numbers:focus{
+	background-color: var(--wp--preset--color--primary);
+	border: 1px solid var(--wp--preset--color--primary);
+	color: var(--wp--preset--color--white);
+}
+
+/* everest form */
+
+.everest-forms .everest-forms-submit-button {
+	background-color: var(--wp--preset--color--secondary) !important;
+	color: #fff !important;
+	border-radius: 99px !important;
+	padding: 15px 40px !important;
+	border: 1px solid var(--wp--preset--color--secondary) !important;
+}
+
+.everest-forms .everest-forms-submit-button:hover {
+	background-color: transparent !important;
+	color: var(--wp--preset--color--secondary) !important;
+}
+
+.everest-forms input,
+.everest-forms textarea {
+	padding: 16px !important;
+	border: 2px solid #2b26360f !important;
+	border-radius: 12px;
+}
+
+/* button varaition */
+
+.wp-block-button .wp-element-button::after {
+	background-color: currentColor;
+	width: 16px;
+	height: 8px;
+	display: inline-flex;
+	mask-position: center;
+	-webkit-mask-position: center;
+	mask-repeat: no-repeat;
+	-webkit-mask-repeat: no-repeat;
+	margin-left: 8px;
+}
+
+.wp-block-button[class*="is-style-travelverse"] .wp-element-button {
+	display: flex;
+	align-items: center;
+}
+
+.wp-block-button:is(
+		.is-style-travelverse-primary-arrow,
+		.is-style-travelverse-white-arrow
+	)
+	.wp-element-button::after {
+	content: "";
+	-webkit-mask-image: url("data:image/svg+xml,%3Csvg width='16' height='8' viewBox='0 0 16 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.01 3H0V5H12.01V8L16 4L12.01 0V3Z' fill='white'/%3E%3C/svg%3E%0A");
+	mask-image: url("data:image/svg+xml,%3Csvg width='16' height='8' viewBox='0 0 16 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.01 3H0V5H12.01V8L16 4L12.01 0V3Z' fill='white'/%3E%3C/svg%3E%0A");
+}
+
+.wp-block-button.is-style-travelverse-white-arrow .wp-element-button {
+	background-color: var(--wp--preset--color--white);
+	border-color: var(--wp--preset--color--white);
+	color: var(--wp--preset--color--heading);
+}
+
+.wp-block-button.is-style-travelverse-white-arrow .wp-element-button:hover {
+	background-color: transparent;
+	color: var(--wp--preset--color--white);
+}
+
+
+/* Animations */
+
+/* hover  */
+
+.wp-block-group.is-style-hover-animation,
+.is-style-hover-animation li.wp-block-post {
+	transition: all ease-in-out 0.3s;
+	-webkit-transition: all ease-in-out 0.3s;
+}
+
+.wp-block-group.is-style-hover-animation:hover,
+.is-style-hover-animation li.wp-block-post:hover {
+	transform: translateY(-20px);
+}
+
+[class*="animation"]:not(.is-style-hover-animation) {
+	transition-property: opacity, transform, filter;
+	transition-duration: 1s;
+	animation-duration: 1s;
+	animation-delay: 0.2s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+
+[class*="fade-in"] {
+	transform-origin: 50% 50%;
+	animation-timing-function: ease;
+}
+
+[class*="flip"] {
+	transform: perspective(2500px) rotate(0);
+	backface-visibility: hidden;
+	animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+[class*="zoom"] {
+	animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* fade  */
+.is-style-slide-up-fade-in-animation.animate {
+	animation-name: slide-up-fade-in;
+}
+
+.is-style-slide-down-fade-in-animation.animate {
+	animation-name: slide-down-fade-in;
+}
+
+.is-style-slide-left-fade-in-animation.animate {
+	animation-name: slide-left-fade-in;
+}
+
+.is-style-slide-right-fade-in-animation.animate {
+	animation-name: slide-right-fade-in;
+}
+
+/* clip */
+.is-style-clipIn.animate {
+	animation: clipIn;
+	transition-duration: 0.75s;
+	transition-delay: 0.5s;
+	animation-duration: 0.75s;
+	transition-timing-function: ease;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+/* flip */
+.is-style-flip-left-animation.animate {
+	animation-name: flip-left;
+}
+
+.is-style-flip-right-animation.animate {
+	animation-name: flip-right;
+}
+
+.is-style-flip-up-animation.animate {
+	animation-name: flip-up;
+}
+
+.is-style-flip-down-animation.animate {
+	animation-name: flip-down;
+}
+
+/* zoom */
+.is-style-zoom-in-animation.animate {
+	animation-name: zoom-in;
+}
+
+.is-style-zoom-out-animation.animate {
+	animation-name: zoom-out;
+}
+
+.is-style-zoom-in-up-animation.animate {
+	animation-name: zoom-in-up;
+}
+
+.is-style-zoom-in-down-animation.animate {
+	animation-name: zoom-in-down;
+}
+
+.is-style-zoom-in-right-animation.animate {
+	animation-name: zoom-in-right;
+}
+
+.is-style-zoom-in-left-animation.animate {
+	animation-name: zoom-in-left;
+}
+
+.is-style-zoom-out-up-animation.animate {
+	animation-name: zoom-out-up;
+}
+
+.is-style-zoom-out-down-animation.animate {
+	animation-name: zoom-out-down;
+}
+
+.is-style-zoom-out-right-animation.animate {
+	animation-name: zoom-out-right;
+}
+
+.is-style-zoom-out-left-animation.animate {
+	animation-name: zoom-out-left;
+}
+
+/*post nagivation */
+.wp-block-post-navigation-link {
+	display: flex;
+}
+.post-navigation-link-next .post-navigation-link__title {
+	margin-right: -32px;
+}
+
+.post-navigation-link-previous .post-navigation-link__title {
+	margin-left: -32px;
+}
+
+.post-navigation-link__title {
+	display: block;
+}
+
+.post-navigation-link__label {
+	font-size: 0.8em;
+	color: var(--wp--preset--color--cyan-bluish-gray);
+}
+
+.wp-block-post-navigation-link__arrow-next, 
+.wp-block-post-navigation-link__arrow-previous{
+	color: var(--wp--preset--color--cyan-bluish-gray);
+}
+
+/* image */
+.wp-block-image img{
+	display: block;
+}
+
+/* footer */
+footer{
+	margin-block-start: 0;
+}
+
+.wp-block-navigation .wp-block-navigation-item__content.wp-block-navigation-item__content:hover{
+	color:var(--wp--preset--color--primary)
+}
+
+.wp-block-post-author__avatar img{
+	border-radius: 100%;
+	width: 65px;
+	height: 65px;
+}
+
+:is(.page-template-template-destination,.page-template-template-activities,.page-template-template-trip_types) .wpte-trip-list-wrapper{
+	margin-top: 20px;
+}
+
+/* fade */
+@keyframes slide-up-fade-in {
+	0% {
+		opacity: 0;
+		filter: blur(5px);
+		transform: translate(0px, 40px);
+	}
+	100% {
+		opacity: 1;
+		filter: blur(0);
+		transform: translate(0px, 0px);
+	}
+}
+
+@keyframes slide-down-fade-in {
+	0% {
+		opacity: 0;
+		transform: translate(0px, -40px);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0px, 0px);
+	}
+}
+
+@keyframes slide-left-fade-in {
+	0% {
+		opacity: 0;
+		filter: blur(5px);
+		transform: translate(-40px, 0px);
+	}
+	100% {
+		opacity: 1;
+		filter: blur(0);
+		transform: translate(0px, 0px);
+	}
+}
+
+@keyframes slide-right-fade-in {
+	0% {
+		opacity: 0;
+		filter: blur(5px);
+		transform: translate(40px, 0px);
+	}
+	100% {
+		opacity: 1;
+		filter: blur(0);
+		transform: translate(0px, 0px);
+	}
+}
+
+@keyframes clipIn {
+	0% {
+		filter: blur(5px);
+		clip-path: polygon(0 0, 10% 0, 0% 100%, 0% 100%);
+	}
+	100% {
+		filter: blur(0);
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+	}
+}
+
+/* flip */
+
+@keyframes flip-left {
+	from {
+		opacity: 0;
+		filter: blur(5px);
+		transform: perspective(2500px) rotateY(-100deg);
+	}
+	to {
+		opacity: 1;
+		filter: blur(0);
+		transform: perspective(2500px) rotateY(0);
+	}
+}
+
+@keyframes flip-right {
+	from {
+		opacity: 0;
+		filter: blur(5px);
+		transform: perspective(2500px) rotateY(100deg);
+	}
+	to {
+		opacity: 1;
+		filter: blur(0px);
+		transform: perspective(2500px) rotateY(0);
+	}
+}
+
+@keyframes flip-up {
+	from {
+		opacity: 0;
+		filter: blur(5px);
+		transform: perspective(2500px) rotateX(-100deg);
+	}
+	to {
+		opacity: 1;
+		filter: blur(0px);
+		transform: perspective(2500px) rotateX(0);
+	}
+}
+
+@keyframes flip-down {
+	from {
+		opacity: 0;
+		filter: blur(5px);
+		transform: perspective(2500px) rotateX(100deg);
+	}
+	to {
+		opacity: 1;
+		filter: blur(0px);
+		transform: perspective(2500px) rotateX(0);
+	}
+}
+
+/* zoom */
+
+@keyframes zoom-in {
+	from {
+		opacity: 0;
+		filter: blur(5px);
+		transform: scale(0.6);
+	}
+	to {
+		opacity: 1;
+		filter: blur(0px);
+		transform: translateZ(0) scale(1);
+	}
+}
+
+@keyframes zoom-out {
+	from {
+		opacity: 0;
+		filter: blur(5px);
+		transform: scale(1.2);
+	}
+	to {
+		opacity: 1;
+		filter: blur(0px);
+		transform: translateZ(0) scale(1);
+	}
+}
+
+@keyframes zoom-in-up {
+	from {
+		opacity: 0;
+		filter: blur(5px);
+		transform: translate3d(0, 100px, 0) scale(0.6);
+	}
+	to {
+		opacity: 1;
+		filter: blur(0px);
+		transform: translateZ(0) scale(1);
+	}
+}
+
+@keyframes zoom-in-down {
+	from {
+		opacity: 0;
+		filter: blur(5px);
+		transform: translate3d(0, -100px, 0) scale(0.6);
+	}
+	to {
+		opacity: 1;
+		filter: blur(0px);
+		transform: translateZ(0) scale(1);
+	}
+}
+
+@keyframes zoom-in-left {
+	from {
+		opacity: 0;
+		filter: blur(5px);
+		transform: translate3d(100px, 0, 0) scale(0.6);
+	}
+	to {
+		opacity: 1;
+		filter: blur(0);
+		transform: translateZ(0) scale(1);
+	}
+}
+
+@keyframes zoom-in-right {
+	from {
+		opacity: 0;
+		filter: blur(5px);
+		transform: translate3d(-100px, 0, 0) scale(0.6);
+	}
+	to {
+		opacity: 1;
+		filter: blur(0px);
+		transform: translateZ(0) scale(1);
+	}
+}
+
+/* zoom out */
+@keyframes zoom-out-up {
+	from {
+		opacity: 0;
+		filter: blur(5px);
+		transform: translate3d(0, 100px, 0) scale(1.2);
+	}
+	to {
+		opacity: 1;
+		filter: blur(0px);
+		transform: translateZ(0) scale(1);
+	}
+}
+
+@keyframes zoom-out-down {
+	from {
+		opacity: 0;
+		filter: blur(5px);
+		transform: translate3d(0, -100px, 0) scale(1.2);
+	}
+	to {
+		opacity: 1;
+		filter: blur(0px);
+		transform: translateZ(0) scale(1);
+	}
+}
+
+@keyframes zoom-out-left {
+	from {
+		opacity: 0;
+		filter: blur(5px);
+		transform: translate3d(100px, 0, 0) scale(1.2);
+	}
+	to {
+		opacity: 1;
+		filter: blur(0px);
+		transform: translateZ(0) scale(1);
+	}
+}
+
+@keyframes zoom-out-right {
+	from {
+		opacity: 0;
+		filter: blur(5px);
+		transform: translate3d(-100px, 0, 0) scale(1.2);
+	}
+	to {
+		opacity: 1;
+		filter: blur(0px);
+		transform: translateZ(0) scale(1);
+	}
+}
+
+@media (max-width: 782px) {
+	/* mobile column */
+
+	.is-style-mob-2-cols {
+		display: grid !important;
+	}
+
+	.is-style-mob-2-cols {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.is-style-mob-3-cols {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	/*flex justify  */
+	.is-style-justify-right {
+		justify-content: flex-end !important;
+	}
+
+	.is-style-justify-left {
+		justify-content: flex-start !important;
+	}
+
+	/* mobile spacer */
+	.is-style-has-mb-20 {
+		height: 20px !important;
+	}
+
+	.is-style-has-mb-30 {
+		height: 30px !important;
+	}
+
+	.is-style-has-mb-40 {
+		height: 40px !important;
+	}
+
+	.is-style-has-mb-50 {
+		height: 50px !important;
+	}
+}
+
+/* heading variation */
+.is-style-travelverse-underline-heading {
+	position: relative;
+}
+
+.is-style-travelverse-underline-heading::after,
+.is-style-travelverse-underline-heading::before {
+	content: "";
+	display: flex;
+	position: absolute;
+	bottom: 0;
+}
+
+.is-style-travelverse-underline-heading::after {
+	border-bottom: 4px solid var(--wp--preset--color--primary);
+	width: 23%;
+}
+
+.is-style-travelverse-underline-heading::before {
+	width: 100%;
+	border-bottom: 1px solid var(--wp--preset--color--base);
+	opacity: 0.16;
+}
+
+.single-trip .is-position-sticky {
+	top: 80px;
+}
+
+.wp-block-quote {
+    border-left: 4px solid var(--wp--preset--color--primary);
+	margin-top: 15px;
+}
+
+.wp-block-quote p {
+    font-size: var(--wp--preset--font-size--medium-large);
+    font-weight: 300;
+	font-family: var(--wp--preset--font-family--rowdies);
+    font-style: italic;
+    color: var(--wp--preset--color--heading);
+}
+
+.wp-block-quote p:first-child::before {
+		display: block;
+		content: "";
+		-webkit-mask-image: url("data:image/svg+xml,%3Csvg width='50' height='44' viewBox='0 0 50 44' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.008 0.883301C4.85596 0.883301 0.676758 5.1809 0.676758 10.4833C0.676758 15.7825 4.85596 20.0833 10.008 20.0833C19.336 20.0833 13.1184 38.6401 0.676758 38.6401V43.1201C22.8816 43.1233 31.5824 0.883301 10.008 0.883301ZM36.888 0.883301C31.7392 0.883301 27.56 5.1809 27.56 10.4833C27.56 15.7825 31.7392 20.0833 36.888 20.0833C46.2191 20.0833 40.0015 38.6401 27.56 38.6401V43.1201C49.7615 43.1233 58.4623 0.883301 36.888 0.883301Z' fill='%23006523'/%3E%3C/svg%3E%0A");
+		mask-image: url("data:image/svg+xml,%3Csvg width='50' height='44' viewBox='0 0 50 44' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.008 0.883301C4.85596 0.883301 0.676758 5.1809 0.676758 10.4833C0.676758 15.7825 4.85596 20.0833 10.008 20.0833C19.336 20.0833 13.1184 38.6401 0.676758 38.6401V43.1201C22.8816 43.1233 31.5824 0.883301 10.008 0.883301ZM36.888 0.883301C31.7392 0.883301 27.56 5.1809 27.56 10.4833C27.56 15.7825 31.7392 20.0833 36.888 20.0833C46.2191 20.0833 40.0015 38.6401 27.56 38.6401V43.1201C49.7615 43.1233 58.4623 0.883301 36.888 0.883301Z' fill='%23006523'/%3E%3C/svg%3E%0A");
+		width: 48px;
+		background-color: var(--wp--preset--color--primary);
+		height: 42px;
+		transition: all 0.3s ease-in-out;
+		margin-top: 16px;
+		margin-right: 20px;
+		mask-repeat: no-repeat;
+		-webkit-mask-repeat: no-repeat;
+		mask-position:center;
+		-webkit-mask-position: center;
+		float: left;
+}
+
+.single-post #respond{
+	padding-top: 0;
+}
+
+@media (min-width: 600px) {
+	.wp-block-navigation__responsive-container-open:not(.always-shown) {
+		display: flex;
+	}
+
+	.wp-block-navigation__responsive-container:not(.hidden-by-default):not(
+			.is-menu-open
+		) {
+		display: none;
+	}
+}
+
+@media (min-width: 782px) {
+	.wp-block-navigation__responsive-container:not(.hidden-by-default):not(
+			.is-menu-open
+		) {
+		display: block;
+	}
+
+	.wp-block-navigation__responsive-container-open:not(.always-shown) {
+		display: none !important;
+	}
+}
+
+@media (max-width: 782px) {
+	:is(.page-template-page-leftsidebar, .post-template-single-leftsidebar)
+		.wp-block-columns {
+		flex-direction: column-reverse;
+	}
+}
+
+.wp-block-navigation__responsive-container
+	.current-menu-item.wp-block-navigation-link {
+	color: var(--wp--preset--color--primary) !important;
+}

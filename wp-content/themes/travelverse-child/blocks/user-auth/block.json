@@ -1,0 +1,18 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "travelverse-child/user-auth",
+  "version": "1.0.0",
+  "title": "User Auth",
+  "category": "theme",
+  "icon": "admin-users",
+  "description": "Display login/register buttons or user info",
+  "supports": {
+    "html": false,
+    "align": true
+  },
+  "textdomain": "travelverse-child",
+  "editorScript": "file:./index.js",
+  "style": "file:./style.css",
+  "render": "file:./render.php"
+}

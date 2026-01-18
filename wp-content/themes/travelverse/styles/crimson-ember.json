@@ -1,0 +1,71 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+	"title": "Crimson Ember",
+    "settings": {
+        "color": {
+			"palette": [
+				{
+					"color": "#A42413",
+					"name": "Primary Color",
+					"slug": "primary"
+				},
+				{
+					"color": "#01677D",
+					"name": "Secondary Color",
+					"slug": "secondary"  
+				},
+				{
+					"color": "#404968",
+					"name": "Text Color",
+					"slug": "base"
+				},
+				{
+					"color": "#2b2636",
+					"name": "Heading Color",
+					"slug": "heading"
+				},
+				{
+					"color": "#F8EEEC",
+					"name": "Accent Color One",
+					"slug": "primary-accent"
+				},
+				{
+					"color": "#EBF3F5",
+					"name": "Accent Color Two",
+					"slug": "accent-color-two"
+				},
+				{
+					"color": "#ffffff",
+					"name": "Background Color",
+					"slug": "background"
+				},
+				{
+					"color": "currentColor",
+					"name": "Current Color",
+					"slug": "currentColor"
+				},
+				{
+					"color": "inherit",
+					"name": "Inherit",
+					"slug": "inherit"
+				},
+				{
+					"color": "transparent",
+					"name": "Transparent",
+					"slug": "transparent"
+				}
+			],
+			"duotone": [
+				{
+					"colors": [
+						"#A42413",
+						"#F8EEEC"
+					],
+					"name": "Primary Color",
+					"slug": "primary-color-duotone"
+				}
+			]
+		}
+    }
+}

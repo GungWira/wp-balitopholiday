@@ -1,0 +1,127 @@
+.wp-block-wptravelengine-trips {
+  width: 100%;
+}
+.wpte-inner-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.wpte-inner-container .wpte-trip-image-wrap {
+  position: relative;
+  aspect-ratio: 5 / 7;
+}
+
+.wpte-inner-container .wpte-trip-details-wrap {
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  bottom: 0;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.wpte-gblock-wrapper .wpte-trip-image-wrap figure {
+  height: 100%;
+  border-radius: 8px;
+}
+
+.wpte-gblock-wrapper .wpte-trip-image-wrap figure.overlay a::before {
+  display: none;
+}
+.wpte-gblock-wrapper .wpte-trip-header-wrap {
+  margin: 0px;
+  margin-bottom: 4px;
+  position: relative;
+}
+.wpte-gblock-wrapper .wpte-trip-header-wrap::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -70px;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  transform: rotate(4deg);
+
+  background-image: url("/wp-content/themes/travelverse-child/assets/images/badge-card.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.wpte-gblock-wrapper .wpte-trip-header-wrap .wpte-trip-title a {
+  font-size: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.wpte-gblock-wrapper .wpte-trip-content p {
+  opacity: 0.8;
+  display: none;
+}
+
+.wpte-gblock-wrapper .wpte-trip-budget-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.wpte-gblock-wrapper .wpte-trip-budget-wrap::after {
+  content: "Booking Sekarang";
+  display: block;
+  background: #075d37;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  border-radius: 4px;
+  font-weight: 500;
+}
+.wpte-gblock-wrapper .wpte-trip-budget-wrap::after:hover {
+  background: #064026;
+}
+.wpte-gblock-wrapper .wpte-trip-budget-wrap {
+  margin-top: 0px;
+  padding-top: 0px;
+  border-top: none;
+}
+
+.wpte-gblock-wrapper .wpte-trip-price-wrap ins {
+  font-weight: 500;
+  font-size: 26px;
+}
+.wpte-gblock-wrapper
+  .wpte-trip-budget-wrap
+  .wpte-trip-price-wrap.align-items-end {
+  align-items: start;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.wpte-gblock-wrapper .wpte-trip-price-wrap del {
+  display: none;
+}
+.wpte-gblock-wrapper
+  .wpte-trip-budget-wrap
+  .wpte-trip-price-wrap.align-items-end::before {
+  content: "Mulai dari :";
+  display: block;
+  font-weight: 400;
+  opacity: 0.6;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+.wpte-gblock-wrapper .wpte-trip-image-wrap .wpte-trip-img-overlay {
+  bottom: unset;
+  top: 8px;
+  left: unset;
+  right: 0;
+}
+.wpte-gblock-wrapper
+  .wpte-trip-image-wrap
+  .wpte-trip-img-overlay
+  .wpte-trip-meta {
+  background: #075d37;
+  padding: 5px 14px;
+  border-radius: 1000px;
+}

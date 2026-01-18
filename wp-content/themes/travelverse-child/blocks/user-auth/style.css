@@ -1,0 +1,73 @@
+/* User Auth Button */
+.tv-user-auth.logged-out {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.tv-user-auth .tv-login,
+.tv-user-auth .tv-register {
+  padding: 8px 24px;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-align: center;
+  border: 2px solid;
+}
+
+.tv-user-auth .tv-login {
+  background: transparent;
+  color: #1a5f3f;
+  border-color: #1a5f3f;
+}
+
+.tv-user-auth .tv-login:hover {
+  background: #f0f7f4;
+  color: #155032;
+  border-color: #155032;
+}
+
+.tv-user-auth .tv-register {
+  background: #1a5f3f;
+  color: #ffffff;
+  border-color: #1a5f3f;
+}
+
+.tv-user-auth .tv-register:hover {
+  background: #155032;
+  border-color: #155032;
+}
+
+/* Logged In */
+.tv-user-auth.logged-in {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.tv-user-auth .tv-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.tv-user-auth .tv-username {
+  font-weight: 500;
+  color: #333;
+}
+
+.tv-user-auth .tv-logout {
+  padding: 8px 20px;
+  background: #dc3545;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.tv-user-auth .tv-logout:hover {
+  background: #c82333;
+}

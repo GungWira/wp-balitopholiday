@@ -1,0 +1,71 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+	"title": "Lavender Sapphire",
+    "settings": {
+        "color": {
+			"palette": [
+				{
+					"color": "#5956E9",
+					"name": "Primary Color",
+					"slug": "primary"
+				},
+				{
+					"color": "#AC1B0B",
+					"name": "Secondary Color",
+					"slug": "secondary"  
+				},
+				{
+					"color": "#404968",
+					"name": "Text Color",
+					"slug": "base"
+				},
+				{
+					"color": "#2b2636",
+					"name": "Heading Color",
+					"slug": "heading"
+				},
+				{
+					"color": "#F2F2FE",
+					"name": "Accent Color One",
+					"slug": "primary-accent"
+				},
+				{
+					"color": "#F9EDEC",
+					"name": "Accent Color Two",
+					"slug": "accent-color-two"
+				},
+				{
+					"color": "#ffffff",
+					"name": "Background Color",
+					"slug": "background"
+				},
+				{
+					"color": "currentColor",
+					"name": "Current Color",
+					"slug": "currentColor"
+				},
+				{
+					"color": "inherit",
+					"name": "Inherit",
+					"slug": "inherit"
+				},
+				{
+					"color": "transparent",
+					"name": "Transparent",
+					"slug": "transparent"
+				}
+			],
+			"duotone": [
+				{
+					"colors": [
+						"#5956E9",
+						"#F2F2FE"
+					],
+					"name": "Primary Color",
+					"slug": "primary-color-duotone"
+				}
+			]
+		}
+    }
+}
