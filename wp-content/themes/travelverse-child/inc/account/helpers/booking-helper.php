@@ -10,101 +10,141 @@ if ( ! defined('ABSPATH') ) exit;
  */
 function bth_get_booking_card_data( $booking_id, $context = 'upcoming' ) {
 
-    // status booking
-    $status = get_post_meta($booking_id, 'wp_travel_engine_booking_status', true);
+    // ── Status ──────────────────────────────────────────────
+    $status = get_post_meta( $booking_id, 'wp_travel_engine_booking_status', true );
 
-    if ( $context === 'upcoming' && ! in_array($status, ['pending', 'booked'], true) ) {
+    if ( $context === 'upcoming' && ! in_array( $status, [ 'pending', 'booked' ], true ) ) {
         return null;
     }
 
-    // tanggal booking
-    $booking_date = get_post_field('post_date', $booking_id);
+    // ── Tanggal booking dibuat ───────────────────────────────
+    $booking_date = get_post_field( 'post_date', $booking_id );
     if ( ! $booking_date ) return null;
+    $booking_date_fmt = date_i18n( 'd F Y', strtotime( $booking_date ) );
 
-    $booking_date_fmt = date_i18n('d F Y', strtotime($booking_date));
-
-    /**
-     * === order_trips (struktur) ===
-     */
+    // ── order_trips ──────────────────────────────────────────
     $order_trips = maybe_unserialize(
-        get_post_meta($booking_id, 'order_trips', true)
+        get_post_meta( $booking_id, 'order_trips', true )
     );
 
-    if ( empty($order_trips) || ! is_array($order_trips) ) {
+    if ( empty( $order_trips ) || ! is_array( $order_trips ) ) {
         return null;
     }
 
-    $trip = reset($order_trips);
+    $trip = reset( $order_trips );
 
-    if ( empty($trip['datetime']) || empty($trip['title']) ) {
+    if ( empty( $trip['datetime'] ) || empty( $trip['title'] ) ) {
         return null;
     }
 
-    $trip_ts = strtotime($trip['datetime']);
+    $trip_ts = strtotime( $trip['datetime'] );
 
-    if ( $context === 'upcoming' && $trip_ts <= current_time('timestamp') ) {
+    // filter berdasarkan context
+    if ( $context === 'upcoming' && $trip_ts <= current_time( 'timestamp' ) ) {
         return null;
     }
-
-    if ( $context === 'completed' && in_array($status, ['pending','booked'], true) ) {
-        if ( $trip_ts > current_time('timestamp') ) {
+    if ( $context === 'completed' ) {
+        $is_active_status = in_array( $status, [ 'pending', 'booked' ], true );
+        if ( $is_active_status && $trip_ts > current_time( 'timestamp' ) ) {
             return null;
         }
     }
 
-    $trip_title     = $trip['title'];
-    $trip_date_fmt  = date_i18n('d F Y', $trip_ts);
+    $trip_title    = $trip['title'];
+    $trip_date_fmt = date_i18n( 'd F Y', $trip_ts );
 
-    /**
-     * === _initial_order_items (kebenaran transaksi) ===
-     */
-    $initial_items = json_decode(
-        get_post_meta($booking_id, '_initial_order_items', true),
-        true
-    );
+    // ── cost & package_name — baca dari order_trips dulu ────
+    $trip_cost    = null;
+    $package_name = null;
+    $pax_details  = [];
 
-    if ( empty($initial_items[0]) || ! is_array($initial_items[0]) ) {
-        return null; // TANPA pricing = jangan render
+    if ( ! empty( $trip['cost'] ) ) {
+        $trip_cost = number_format( (float) $trip['cost'], 0, ',', '.' );
+    }
+    if ( ! empty( $trip['package_name'] ) ) {
+        $package_name = $trip['package_name'];
     }
 
-    $item = $initial_items[0];
-
-    // harga & paket
-    if ( empty($item['cost']) || empty($item['package_name']) ) {
-        return null;
-    }
-
-    $trip_cost    = number_format($item['cost'], 0, ',', '.');
-    $package_name = $item['package_name'];
-
-    /**
-     * Pax detail
-     */
-    $pax_details = [];
-    $pricing_items = $item['_cart_item_object']['line_items']['pricing_category'] ?? [];
-
+    $pricing_items = $trip['_cart_item_object']['line_items']['pricing_category'] ?? [];
     foreach ( $pricing_items as $row ) {
-        if ( empty($row['label']) || empty($row['quantity']) ) continue;
-
+        if ( empty( $row['label'] ) || empty( $row['quantity'] ) ) continue;
         $pax_details[] = [
             'label' => $row['label'],
             'qty'   => (int) $row['quantity'],
-            'total' => number_format($row['total'] ?? 0, 0, ',', '.'),
+            'total' => number_format( $row['total'] ?? 0, 0, ',', '.' ),
         ];
     }
 
-    /**
-     * Image trip
-     */
-    $image = '';
-    if ( ! empty($item['ID']) ) {
-        $image = get_the_post_thumbnail_url($item['ID'], 'medium');
+    // Fallback ke _initial_order_items (format booking lama)
+    if ( ! $trip_cost || ! $package_name ) {
+        $initial_items = json_decode(
+            get_post_meta( $booking_id, '_initial_order_items', true ),
+            true
+        );
+        $item = $initial_items[0] ?? null;
+
+        if ( is_array( $item ) ) {
+            if ( ! $trip_cost && ! empty( $item['cost'] ) ) {
+                $trip_cost = number_format( (float) $item['cost'], 0, ',', '.' );
+            }
+            if ( ! $package_name && ! empty( $item['package_name'] ) ) {
+                $package_name = $item['package_name'];
+            }
+            if ( empty( $pax_details ) ) {
+                $pricing_items_old = $item['_cart_item_object']['line_items']['pricing_category'] ?? [];
+                foreach ( $pricing_items_old as $row ) {
+                    if ( empty( $row['label'] ) || empty( $row['quantity'] ) ) continue;
+                    $pax_details[] = [
+                        'label' => $row['label'],
+                        'qty'   => (int) $row['quantity'],
+                        'total' => number_format( $row['total'] ?? 0, 0, ',', '.' ),
+                    ];
+                }
+            }
+        }
+    }
+
+    // Fallback dari cart_info + booking_setting
+    if ( ! $trip_cost || ! $package_name ) {
+        $cart_info = maybe_unserialize(
+            get_post_meta( $booking_id, 'cart_info', true )
+        );
+        if ( is_array( $cart_info ) ) {
+            if ( ! $trip_cost && ! empty( $cart_info['total'] ) ) {
+                $trip_cost = number_format( (float) $cart_info['total'], 0, ',', '.' );
+            }
+            if ( ! $package_name ) {
+                $setting = maybe_unserialize(
+                    get_post_meta( $booking_id, 'wp_travel_engine_booking_setting', true )
+                );
+                $package_name = $setting['place_order']['trip_package'] ?? null;
+            }
+        }
+    }
+
+    if ( ! $trip_cost || ! $package_name ) {
+        return null;
+    }
+
+    // ── Trip image ───────────────────────────────────────────
+    $image   = '';
+    $trip_id = $trip['ID'] ?? 0;
+    if ( $trip_id ) {
+        $image = get_the_post_thumbnail_url( $trip_id, 'medium' );
+    }
+
+    // ── Display status (hanya tampilan, tidak ubah database) ─
+    // pending + tanggal sudah lewat = tampilkan sebagai expired
+    $display_status = $status;
+    if ( $status === 'pending' && $trip_ts <= current_time( 'timestamp' ) ) {
+        $display_status = 'failed';
     }
 
     return [
+        'booking_id'        => $booking_id,
         'trip_title'        => $trip_title,
         'package_name'      => $package_name,
-        'status'            => $status,
+        'status'            => $display_status,
         'trip_date_fmt'     => $trip_date_fmt,
         'booking_date_fmt'  => $booking_date_fmt,
         'trip_cost'         => $trip_cost,
