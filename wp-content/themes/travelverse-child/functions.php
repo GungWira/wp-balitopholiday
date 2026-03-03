@@ -35,8 +35,6 @@ add_action('wp_enqueue_scripts', function () {
     }
 });
 
-// trial
-
 // (FIX) Load button CSS di SEMUA halaman (untuk block user-auth)
 add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style(
@@ -108,3 +106,10 @@ add_action( 'wp_enqueue_scripts', function () {
 require_once get_stylesheet_directory() . '/user-type-selector.php';
 require_once get_stylesheet_directory() . '/trip-filter.php';
 require_once get_stylesheet_directory() . '/trip-filter-enhanced.php';
+
+
+
+// FIX
+require_once get_stylesheet_directory() . '/inc/trip/filter.php';
+require_once get_stylesheet_directory() . '/inc/trip/filter-enhanced.php';
+require_once get_stylesheet_directory() . '/inc/user/user-type-selector.php';
