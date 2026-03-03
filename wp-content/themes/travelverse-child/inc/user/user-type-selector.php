@@ -176,7 +176,7 @@ function wte_enqueue_user_type_assets() {
             .wte-type-button:hover {
                 transform: translateY(-5px);
                 box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-                border-color: #2196F3;
+                border-color: #075d37;
                 background: #fff;
             }
             
@@ -203,11 +203,11 @@ function wte_enqueue_user_type_assets() {
             /* Type Icon */
             .wte-type-icon {
                 margin-bottom: 15px;
-                color: #2196F3;
+                color: #075d37;
             }
             
             .wte-type-button:hover .wte-type-icon {
-                color: #1976D2;
+                color: #055230;
                 transform: scale(1.1);
                 transition: all 0.3s ease;
             }
@@ -375,7 +375,7 @@ function wte_display_change_user_type_button() {
             }
             
             .wte-change-type-btn {
-                background: #2196F3;
+                background: #075d37;
                 color: white;
                 border: none;
                 border-radius: 50px;
@@ -383,7 +383,7 @@ function wte_display_change_user_type_button() {
                 font-size: 14px;
                 font-weight: 600;
                 cursor: pointer;
-                box-shadow: 0 4px 12px rgba(33, 150, 243, 0.3);
+                box-shadow: 0 4px 12px rgb(16, 85, 27, 0.3);
                 transition: all 0.3s ease;
                 display: flex;
                 align-items: center;
@@ -391,8 +391,8 @@ function wte_display_change_user_type_button() {
             }
             
             .wte-change-type-btn:hover {
-                background: #1976D2;
-                box-shadow: 0 6px 20px rgba(33, 150, 243, 0.4);
+                background: #055230;
+                box-shadow: 0 6px 20px rgb(16, 85, 27, 0.3);
                 transform: translateY(-2px);
             }
             
