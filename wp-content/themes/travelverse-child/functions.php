@@ -102,13 +102,6 @@ add_action( 'wp_enqueue_scripts', function () {
 });
 // =========== COPY REFERRAL JS ================
 
-
-require_once get_stylesheet_directory() . '/user-type-selector.php';
-require_once get_stylesheet_directory() . '/trip-filter.php';
-require_once get_stylesheet_directory() . '/trip-filter-enhanced.php';
-
-
-
 // FIX
 require_once get_stylesheet_directory() . '/inc/trip/filter.php';
 require_once get_stylesheet_directory() . '/inc/trip/filter-enhanced.php';
