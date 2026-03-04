@@ -106,3 +106,7 @@ add_action( 'wp_enqueue_scripts', function () {
 require_once get_stylesheet_directory() . '/inc/trip/filter.php';
 require_once get_stylesheet_directory() . '/inc/trip/filter-enhanced.php';
 require_once get_stylesheet_directory() . '/inc/user/user-type-selector.php';
+
+// FIX (BOOKING API)
+require_once get_stylesheet_directory() . '/inc/api/booking-api.php';
+require_once get_stylesheet_directory() . '/inc/api/payment-redirect.php';
