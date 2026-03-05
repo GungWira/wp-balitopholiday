@@ -74,7 +74,7 @@ function travelverse_child_enqueue_trip_card_css() {
 add_action('wp_enqueue_scripts', function () {
     global $post;
 
-    if ( isset($post->post_content) && has_shortcode($post->post_content, 'wp_travel_engine_dashboard') ) {
+    if ( isset($post->post_content) && has_shortcode($post->post_content, 'travelverse_account') ) {
         wp_enqueue_style(
             'bth-dashboard',
             get_stylesheet_directory_uri() . '/assets/css/dahsboard_booking.css',
@@ -110,3 +110,17 @@ require_once get_stylesheet_directory() . '/inc/user/user-type-selector.php';
 // FIX (BOOKING API)
 require_once get_stylesheet_directory() . '/inc/api/booking-api.php';
 require_once get_stylesheet_directory() . '/inc/api/payment-redirect.php';
+
+// FIX LOGIN FEATURE
+add_action( 'login_init', function() {
+    if ( isset( $_GET['action'] ) ) return;
+    if ( $_SERVER['REQUEST_METHOD'] === 'POST' ) return;
+    wp_safe_redirect( home_url( '/login' ) );
+    exit;
+} );
+
+// FIX LOGIN FEATURE
+require_once get_stylesheet_directory() . '/inc/auth/shortcode-login.php';
+
+// REGISTER FEATURE
+require_once get_stylesheet_directory() . '/inc/auth/shortcode-register.php';
