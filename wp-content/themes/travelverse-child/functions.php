@@ -125,6 +125,7 @@ require_once get_stylesheet_directory() . '/inc/auth/shortcode-login.php';
 // FIX REGISTER FEATURE
 require_once get_stylesheet_directory() . '/inc/auth/shortcode-register.php';
 
+// FIX NAVBAR CUSTOM
 function travelverse_register_custom_navbar_block() {
     // Pastikan folder block ada
     $block_dir = get_stylesheet_directory() . '/blocks/custom-navbar';
@@ -136,3 +137,37 @@ function travelverse_register_custom_navbar_block() {
     register_block_type( $block_dir );
 }
 add_action( 'init', 'travelverse_register_custom_navbar_block' );
+
+// LOADING ANIMATION
+function travelverse_loading_screen() {
+    // CSS — priority 1 agar load paling awal
+    wp_enqueue_style(
+        'tv-loading-screen',
+        get_stylesheet_directory_uri() . '/assets/css/loading-screen.css',
+        [],
+        '1.0.0'
+    );
+
+    // JS — load di footer
+    wp_enqueue_script(
+        'tv-loading-screen',
+        get_stylesheet_directory_uri() . '/assets/js/loading-screen.js',
+        [],
+        '1.0.0',
+        true
+    );
+
+    // HTML — inject langsung setelah <body> terbuka
+    add_action( 'wp_body_open', function () {
+        echo '
+        <div id="tv-loading-screen" role="status" aria-label="Memuat halaman...">
+          <div class="tv-loading__text-wrap">
+            <span class="tv-loading__brand">Bali Top Holiday</span>
+          </div>
+          <div class="tv-loading__subtitle-wrap">
+            <span class="tv-loading__subtitle">Tour &amp; Travel</span>
+          </div>
+        </div>';
+    });
+}
+add_action( 'wp_enqueue_scripts', 'travelverse_loading_screen' );
