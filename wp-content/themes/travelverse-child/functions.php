@@ -122,5 +122,17 @@ add_action( 'login_init', function() {
 // FIX LOGIN FEATURE
 require_once get_stylesheet_directory() . '/inc/auth/shortcode-login.php';
 
-// REGISTER FEATURE
+// FIX REGISTER FEATURE
 require_once get_stylesheet_directory() . '/inc/auth/shortcode-register.php';
+
+function travelverse_register_custom_navbar_block() {
+    // Pastikan folder block ada
+    $block_dir = get_stylesheet_directory() . '/blocks/custom-navbar';
+
+    if ( ! file_exists( $block_dir . '/block.json' ) ) {
+        return; // Block belum tersedia, skip
+    }
+
+    register_block_type( $block_dir );
+}
+add_action( 'init', 'travelverse_register_custom_navbar_block' );

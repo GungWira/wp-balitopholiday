@@ -15,8 +15,7 @@ if ( is_user_logged_in() ) {
 } else {
     ?>
     <div class="tv-user-auth logged-out">
-        <a href="/login" class="tv-login">Login</a>
-        <a href="/register" class="tv-register">Register</a>
+        <a href="/login" class="tv-register">Masuk ke Akun</a>
     </div>
     <?php
 }

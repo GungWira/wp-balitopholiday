@@ -1,0 +1,20 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "travelverse-child/custom-navbar",
+  "version": "1.0.0",
+  "title": "Custom Navbar",
+  "category": "theme",
+  "icon": "menu",
+  "description": "Responsive navbar dengan hamburger menu dan WhatsApp contact.",
+  "keywords": ["navbar", "navigation", "header", "menu"],
+  "textdomain": "travelverse-child",
+  "editorScript": "file:./navbar-editor.js",
+  "style": "file:./navbar.css",
+  "script": "file:./navbar.js",
+  "render": "file:./render.php",
+  "supports": {
+    "html": false,
+    "align": ["wide", "full"]
+  }
+}

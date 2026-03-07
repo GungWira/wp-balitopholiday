@@ -1,0 +1,398 @@
+/* =============================================================
+   Custom Navbar Block — navbar.css
+   travelverse-child/blocks/custom-navbar/
+   ============================================================= */
+
+/* ── Variables ─────────────────────────────────────────────── */
+.custom-navbar {
+  --navbar-bg: #ffffff;
+  --navbar-border: #e8e8e8;
+  --navbar-text: #1a1a1a;
+  --navbar-link-hover: #075d37;
+  --navbar-green: #075d37;
+  --navbar-green-hover: #074e2e;
+  --navbar-green-light: #e8f5e9;
+  --navbar-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  --navbar-height: 72px;
+  --navbar-z: 1000;
+  --drawer-width: 300px;
+  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ── Base ───────────────────────────────────────────────────── */
+.custom-navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--navbar-z);
+  background-color: var(--navbar-bg);
+  border-bottom: 1px solid var(--navbar-border);
+  box-shadow: var(--navbar-shadow);
+  width: 100%;
+}
+
+.custom-navbar *,
+.custom-navbar *::before,
+.custom-navbar *::after {
+  box-sizing: border-box;
+}
+
+/* ── Inner Container ────────────────────────────────────────── */
+.custom-navbar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: var(--navbar-height);
+  gap: 24px;
+}
+
+/* ── Brand / Logo ───────────────────────────────────────────── */
+.custom-navbar__brand {
+  flex-shrink: 0;
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.custom-navbar__logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.custom-navbar__logo-img {
+  height: 52px;
+  width: auto;
+  display: block;
+}
+
+.custom-navbar__site-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--navbar-text);
+  text-decoration: none;
+  letter-spacing: -0.3px;
+}
+
+.custom-navbar__site-title:hover {
+  color: var(--navbar-green);
+}
+
+/* ── Desktop Menu ───────────────────────────────────────────── */
+.custom-navbar__menu {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex: 3;
+  justify-content: center;
+}
+
+.custom-navbar__menu-item {
+  margin: 0;
+  padding: 0;
+}
+
+.custom-navbar__menu-link {
+  display: block;
+  padding: 8px 14px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--navbar-text);
+  text-decoration: none;
+  border-radius: 6px;
+  transition:
+    color var(--transition),
+    background-color var(--transition);
+  white-space: nowrap;
+}
+
+.custom-navbar__menu-link:hover,
+.custom-navbar__menu-link:focus-visible {
+  color: var(--navbar-green);
+  background-color: var(--navbar-green-light);
+  outline: none;
+}
+
+.custom-navbar__menu-link.is-active {
+  color: var(--navbar-green);
+  font-weight: 600;
+}
+
+/* ── Desktop Actions ────────────────────────────────────────── */
+.custom-navbar__actions {
+  flex-shrink: 0;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 12px;
+}
+
+/* ── Hamburger Button (hidden on desktop) ───────────────────── */
+.custom-navbar__hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  background: transparent;
+  border: 1px solid var(--navbar-border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition:
+    background-color var(--transition),
+    border-color var(--transition);
+  flex-shrink: 0;
+}
+
+.custom-navbar__hamburger:hover {
+  background-color: var(--navbar-green-light);
+  border-color: var(--navbar-green);
+}
+
+.custom-navbar__hamburger-bar {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: var(--navbar-text);
+  border-radius: 2px;
+  transition:
+    transform var(--transition),
+    opacity var(--transition),
+    width var(--transition);
+  transform-origin: center;
+}
+
+/* Hamburger → X animation */
+.custom-navbar__hamburger[aria-expanded="true"]
+  .custom-navbar__hamburger-bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.custom-navbar__hamburger[aria-expanded="true"]
+  .custom-navbar__hamburger-bar:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+.custom-navbar__hamburger[aria-expanded="true"]
+  .custom-navbar__hamburger-bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ── Overlay ────────────────────────────────────────────────── */
+.custom-navbar__overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: calc(var(--navbar-z) + 1);
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity var(--transition),
+    visibility var(--transition);
+}
+
+.custom-navbar__overlay.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ── Drawer ─────────────────────────────────────────────────── */
+.custom-navbar__drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: var(--drawer-width);
+  max-width: 85vw;
+  background-color: var(--navbar-bg);
+  z-index: calc(var(--navbar-z) + 2);
+  display: flex;
+  flex-direction: column;
+  transform: translateX(-100%);
+  transition: transform var(--transition);
+  box-shadow: 4px 0 24px rgba(0, 0, 0, 0.12);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.custom-navbar__drawer.is-open {
+  transform: translateX(0);
+}
+
+/* Drawer Header */
+.custom-navbar__drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px 16px;
+  border-bottom: 1px solid var(--navbar-border);
+  flex-shrink: 0;
+}
+
+.custom-navbar__drawer-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: transparent;
+  border: 1px solid var(--navbar-border);
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  color: var(--navbar-text);
+  line-height: 1;
+  transition:
+    background-color var(--transition),
+    color var(--transition);
+  flex-shrink: 0;
+}
+
+.custom-navbar__drawer-close:hover {
+  background-color: #fee2e2;
+  color: #dc2626;
+  border-color: #fca5a5;
+}
+
+/* Drawer Menu */
+.custom-navbar__drawer-menu {
+  list-style: none;
+  margin: 0;
+  padding: 12px 0;
+  flex: 1;
+}
+
+.custom-navbar__drawer-item {
+  margin: 0;
+  padding: 0;
+}
+
+.custom-navbar__drawer-link {
+  display: flex;
+  align-items: center;
+  padding: 14px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--navbar-text);
+  text-decoration: none;
+  transition:
+    color var(--transition),
+    background-color var(--transition),
+    padding-left var(--transition);
+  border-left: 3px solid transparent;
+}
+
+.custom-navbar__drawer-link:hover,
+.custom-navbar__drawer-link:focus-visible {
+  color: var(--navbar-green);
+  background-color: var(--navbar-green-light);
+  padding-left: 30px;
+  border-left-color: var(--navbar-green);
+  outline: none;
+}
+
+/* Drawer Footer */
+.custom-navbar__drawer-footer {
+  padding: 20px;
+  border-top: 1px solid var(--navbar-border);
+  flex-shrink: 0;
+}
+
+/* WhatsApp Button */
+.custom-navbar__whatsapp-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 14px 20px;
+  background-color: var(--navbar-green);
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+  transition:
+    background-color var(--transition),
+    transform var(--transition),
+    box-shadow var(--transition);
+  box-shadow: 0 2px 8px rgba(46, 125, 50, 0.3);
+}
+
+.custom-navbar__whatsapp-btn:hover,
+.custom-navbar__whatsapp-btn:focus-visible {
+  background-color: var(--navbar-green-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(46, 125, 50, 0.4);
+  outline: none;
+  color: #ffffff;
+}
+
+.custom-navbar__whatsapp-icon {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+/* ── RESPONSIVE: Mobile ─────────────────────────────────────── */
+@media (max-width: 864px) {
+  /* Sembunyikan desktop menu dan actions */
+  .custom-navbar__menu,
+  .custom-navbar__actions {
+    display: none;
+  }
+
+  /* Tampilkan hamburger */
+  .custom-navbar__hamburger {
+    display: flex;
+  }
+
+  .custom-navbar__inner {
+    padding: 0 16px;
+  }
+}
+
+/* ── Block Editor Preview ───────────────────────────────────── */
+.wp-block-travelverse-child-custom-navbar {
+  display: block;
+}
+
+.custom-navbar {
+  transition:
+    transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.35s ease;
+}
+
+.custom-navbar.is-hidden {
+  transform: translateY(-100%);
+}
+
+.promotion__outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: var(--navbar-green);
+  padding: 2px 0;
+  gap: 2px;
+}
+.promotion__outer svg {
+  color: white;
+  height: 14px;
+}
+.promotion__outer p {
+  color: white;
+  font-size: 8px;
+}
+.promotion__outer p span {
+  font-weight: bold;
+}
