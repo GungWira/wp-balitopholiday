@@ -204,15 +204,3 @@ add_action( 'wp_enqueue_scripts', function() {
         );
     }
 });
-
-add_filter( 'no_result_found_message', function() {
-    ob_start();
-    ?>
-    <div class="bth-no-result">
-        <!-- SVG kamu di sini -->
-        <svg> ... </svg>
-        <p>Tidak ada paket wisata ditemukan</p>
-    </div>
-    <?php
-    return ob_get_clean();
-});

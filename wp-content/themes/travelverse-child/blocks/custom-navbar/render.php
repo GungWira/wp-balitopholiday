@@ -27,7 +27,7 @@ if ( $custom_logo_id ) {
 $nav_links = [
     [ 'label' => 'Paket Wisata',        'url' => "/trip" ],
     [ 'label' => 'Promo Spesial',        'url' => "#" ],
-    [ 'label' => 'Tentang Kami',        'url' => "#" ],
+    [ 'label' => 'Tentang Kami',        'url' => "/tentang-kami" ],
     [ 'label' => 'Galeri',        'url' => "#" ],
 ];
 

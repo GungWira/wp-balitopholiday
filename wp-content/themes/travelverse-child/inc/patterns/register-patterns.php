@@ -33,6 +33,8 @@ add_filter( 'travelverse_block_patterns', function ( $patterns ) {
         'frontpage/testimonial-section',
         'frontpage/header-section',
         'frontpage/footer-section',
+
+        'tentang-kami/tentang-hero-section',
     );
 
     return array_merge( $patterns, $child_patterns );
