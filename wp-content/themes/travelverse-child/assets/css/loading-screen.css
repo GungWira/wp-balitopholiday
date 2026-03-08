@@ -41,8 +41,7 @@
   color: #075d37;
   letter-spacing: -0.5px;
   white-space: nowrap;
-  transform: translateY(110%);
-  animation: tv-slide-up 0.7s cubic-bezier(0.34, 1.2, 0.64, 1) 0.1s forwards;
+  transform: translateY(0);
 }
 
 .tv-loading__subtitle-wrap {
@@ -60,8 +59,18 @@
   letter-spacing: 3px;
   text-transform: uppercase;
   white-space: nowrap;
+  transform: translateY(0);
+}
+
+.tv-loading-screen.is-transitioning .tv-loading__brand,
+#tv-loading-screen.is-transitioning .tv-loading__brand {
   transform: translateY(110%);
-  animation: tv-slide-up 0.7s cubic-bezier(0.34, 1.2, 0.64, 1) 0.28s forwards;
+  animation: tv-slide-up 0.7s cubic-bezier(0.34, 1.2, 0.64, 1) 0.15s forwards;
+}
+
+#tv-loading-screen.is-transitioning .tv-loading__subtitle {
+  transform: translateY(110%);
+  animation: tv-slide-up 0.7s cubic-bezier(0.34, 1.2, 0.64, 1) 0.3s forwards;
 }
 
 @keyframes tv-slide-up {

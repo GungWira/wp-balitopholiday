@@ -25,7 +25,7 @@ if ( $custom_logo_id ) {
 
 // Nav links — bisa dikembangkan pakai wp_nav_menu nantinya
 $nav_links = [
-    [ 'label' => 'Paket Wisata',        'url' => "#" ],
+    [ 'label' => 'Paket Wisata',        'url' => "/trip" ],
     [ 'label' => 'Promo Spesial',        'url' => "#" ],
     [ 'label' => 'Tentang Kami',        'url' => "#" ],
     [ 'label' => 'Galeri',        'url' => "#" ],

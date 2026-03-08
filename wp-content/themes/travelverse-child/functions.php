@@ -102,10 +102,31 @@ add_action( 'wp_enqueue_scripts', function () {
 });
 // =========== COPY REFERRAL JS ================
 
-// FIX
+// FIX USER FILTER BY TRIP TYPE
 require_once get_stylesheet_directory() . '/inc/trip/filter.php';
 require_once get_stylesheet_directory() . '/inc/trip/filter-enhanced.php';
 require_once get_stylesheet_directory() . '/inc/user/user-type-selector.php';
+
+add_filter( 'wte_filter_categories', function( $categories ) {
+
+    if ( ! isset( $_COOKIE['wte_user_type'] ) ) {
+        return $categories;
+    }
+
+    $user_type = sanitize_text_field( $_COOKIE['wte_user_type'] );
+
+    if ( ! in_array( $user_type, array( 'personal', 'corporate' ), true ) ) {
+        return $categories;
+    }
+
+    // Inject langsung ke $_REQUEST agar terbaca sebagai filter aktif
+    $_REQUEST['trip_types'] = $user_type;
+    $_GET['trip_types']     = $user_type;
+    $_POST['trip_types']    = $user_type;
+
+    return $categories;
+
+}, 20 );
 
 // FIX (BOOKING API)
 require_once get_stylesheet_directory() . '/inc/api/booking-api.php';
@@ -138,7 +159,7 @@ function travelverse_register_custom_navbar_block() {
 }
 add_action( 'init', 'travelverse_register_custom_navbar_block' );
 
-// LOADING ANIMATION
+// FIX LOADING ANIMATION
 function travelverse_loading_screen() {
     // CSS — priority 1 agar load paling awal
     wp_enqueue_style(
@@ -171,3 +192,27 @@ function travelverse_loading_screen() {
     });
 }
 add_action( 'wp_enqueue_scripts', 'travelverse_loading_screen' );
+
+// FIX CUSTOM TRIP LIST CSS
+add_action( 'wp_enqueue_scripts', function() {
+    if ( is_post_type_archive( 'trip' ) ) {
+        wp_enqueue_style(
+            'custom-archive-trip',
+            get_stylesheet_directory_uri() . '/assets/css/archive-trip.css',
+            [],
+            '1.0.0'
+        );
+    }
+});
+
+add_filter( 'no_result_found_message', function() {
+    ob_start();
+    ?>
+    <div class="bth-no-result">
+        <!-- SVG kamu di sini -->
+        <svg> ... </svg>
+        <p>Tidak ada paket wisata ditemukan</p>
+    </div>
+    <?php
+    return ob_get_clean();
+});
