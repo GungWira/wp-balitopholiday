@@ -86,3 +86,17 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+window.addEventListener("pageshow", function (e) {
+  var el = document.getElementById("tv-loading-screen");
+  if (!el) return;
+
+  if (e.persisted) {
+    // Dari bfcache (back/forward) — langsung sembunyikan
+    el.classList.remove("is-transitioning", "is-leaving");
+    el.classList.add("is-gone");
+  } else {
+    // Load normal — hanya bersihkan is-transitioning, biarkan hideLoading yang handle
+    el.classList.remove("is-transitioning");
+  }
+});
