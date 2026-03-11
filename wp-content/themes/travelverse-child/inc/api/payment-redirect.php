@@ -53,7 +53,7 @@ add_filter( 'wptravelengine_redirect_after_booking', function( $should_redirect 
         $customer_name = $current_user->display_name;
     }
     $customer_email = $current_user->user_email;
-    $customer_phone = get_user_meta( $current_user->ID, 'phone', true ) ?: '08000000000'; // default jika kosong
+    $customer_phone = get_user_meta( $current_user->ID, 'phone', true ) ?: '08000000000';
 
     // Nama produk
     $product_name = $trip['title'] ?? 'Tour Package';
@@ -87,8 +87,7 @@ add_filter( 'wptravelengine_redirect_after_booking', function( $should_redirect 
     // Handle error koneksi
     if ( is_wp_error( $response ) ) {
         error_log( '[BTH Payment] Gagal hit payment API: ' . $response->get_error_message() );
-        // Fallback: redirect ke halaman checkout dengan pesan error
-        wp_redirect( add_query_arg( 'payment_error', '1', wc_get_checkout_url() ?? home_url() ) );
+        wp_redirect( add_query_arg( 'payment_error', '1', home_url() ) );
         exit;
     }
 
@@ -107,8 +106,36 @@ add_filter( 'wptravelengine_redirect_after_booking', function( $should_redirect 
     // ── Step 2: Simpan transaction_id ke booking meta ────────
     update_post_meta( $booking_id, '_bth_transaction_id', $transaction_id );
 
-    // ── Step 3: Redirect ke payment page ────────────────────
-    // Key = 'dHJhbnNhY3Rpb25faWQ' (base64 dari 'transaction_id' tanpa padding)
+    // ── Step 3: Tambah point sementara (amount / 10.000) ─────
+    // TODO: Pindahkan ke callback setelah payment verified
+    if ( $amount > 0 && $current_user->ID ) {
+        $points_earned = (int) floor( $amount / 10000 );
+
+        if ( $points_earned > 0 ) {
+            bth_add_point_log( [
+                'user_id'      => $current_user->ID,
+                'type'         => 'earn',
+                'source'       => 'booking',
+                'reference_id' => $booking_id,
+                'points'       => $points_earned,
+                'note'         => sprintf(
+                    'Point dari booking #%d — nominal Rp %s',
+                    $booking_id,
+                    number_format( $amount, 0, ',', '.' )
+                ),
+            ] );
+
+            error_log( sprintf(
+                '[BTH Point] User #%d mendapat %d point dari booking #%d (Rp %s)',
+                $current_user->ID,
+                $points_earned,
+                $booking_id,
+                number_format( $amount, 0, ',', '.' )
+            ) );
+        }
+    }
+
+    // ── Step 4: Redirect ke payment page ────────────────────
     $redirect_url = $payment_app_url . '/payment/page?dHJhbnNhY3Rpb25faWQ=' . urlencode( $transaction_id );
 
     wp_redirect( $redirect_url );
