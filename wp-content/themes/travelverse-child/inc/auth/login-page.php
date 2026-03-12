@@ -252,9 +252,16 @@ $redirect_to = isset( $_GET['redirect_to'] )
                 </div>
             <?php endif; ?>
 
-            <form method="post" action="<?php echo esc_url( site_url( 'wp-login.php', 'login_post' ) ); ?>">
+            <?php if ( isset( $_GET['login'] ) && $_GET['login'] === 'required' ) : ?>
+                <div class="auth-error">
+                    Silakan login terlebih dahulu untuk melanjutkan.
+                </div>
+            <?php endif; ?>
+
+            <!-- Form submit ke halaman ini sendiri, diproses oleh init hook -->
+            <form method="post" action="">
+                <?php wp_nonce_field( 'bth_login', 'bth_login_nonce' ); ?>
                 <input type="hidden" name="redirect_to" value="<?php echo esc_attr( $redirect_to ); ?>">
-                <input type="hidden" name="testcookie" value="1">
 
                 <div class="login-field">
                     <label for="user_login">Email</label>
@@ -271,8 +278,6 @@ $redirect_to = isset( $_GET['redirect_to'] )
                         <input type="checkbox" name="rememberme" value="forever"> Ingat saya
                     </label>
                 </div>
-
-                <?php wp_nonce_field( 'wplogin' ); ?>
 
                 <button type="submit" name="wp-submit">Login</button>
             </form>
