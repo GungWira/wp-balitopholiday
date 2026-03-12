@@ -16,6 +16,10 @@ switch ($active_tab) {
         require __DIR__ . '/profile.php';
         break;
 
+    case 'favorites':
+        require __DIR__ . '/favorites.php';
+        break;
+        
     default:
         require __DIR__ . '/bookings.php';
 }

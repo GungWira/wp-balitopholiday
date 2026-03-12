@@ -27,7 +27,7 @@ body {
   top: 0;
   height: 100vh;
   max-height: 100vh;
-  padding-top: 96px;
+  padding-top: 28px;
   padding-bottom: 24px;
 }
 .bth-acc-sidebar-container {
@@ -146,7 +146,6 @@ body {
   flex: 1;
   padding: 32px 40px;
   max-width: 1200px;
-  margin-top: 96px;
   overflow: hidden;
 }
 
