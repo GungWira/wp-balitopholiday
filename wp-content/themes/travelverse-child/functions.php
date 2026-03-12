@@ -204,3 +204,8 @@ add_action( 'wp_enqueue_scripts', function() {
         );
     }
 });
+
+// AUTO FILLING FORM FOR CHECKOUT PAGE
+require_once get_stylesheet_directory() . '/inc/checkout/autofill-billing.php';
+require_once get_stylesheet_directory() . '/inc/checkout/force-billing.php';
+require_once get_stylesheet_directory() . '/inc/checkout/fix-booking-usermeta.php';
